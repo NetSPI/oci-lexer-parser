@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oci-lexer-parser"
-version = "0.1.1"
+version = "0.1.2"
 description = "Parse OCI IAM policy statements and dynamic group matching rules into JSON-friendly dicts using ANTLR4."
 readme = "README.md"
 requires-python = ">=3.10"
