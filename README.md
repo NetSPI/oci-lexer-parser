@@ -11,8 +11,8 @@
 ## Overview
 
 > Note this SDK is used in "OCInferno", a tool to be released within the NetSPI repo by end of March for OCI enumeration and mapping.
->
-> In the spirit of full transparency, the development of the script was done with the help of LLM coding assistants. The assistant did most of the heavy lifting. As with any open-source tool, make sure taht you review teh code to understand waht its doing before you run it. That said, we've reviewed the code for any potential issues and welcome any changes via PR requets. See `Contributing.md` at the repo root.
+> 
+> In the spirit of full transparency, the development of the script was done with the help of LLM coding assistants. The assistant did most of the heavy lifting. As with any open-source tool, make sure that you review the  code to understand what its doing before you run it. That said, we've reviewed the code for any potential issues and welcome any changes via PR requests. See `Contributing.md` at the repo root.
 
 OCI Lexer Parser converts human-readable OCI IAM statements and dynamic group rules into normalized JSON for analysis, testing, or transformation. It is built with built with ANTLR4 and Python.
 
@@ -253,8 +253,8 @@ oci-lexer-parse ./policy.txt --jsonl
 | `docs/sdk/Dynamic_Group_SDK.md` | Dynamic group SDK usage and diagnostics |
 | `docs/schema/Policy_Schema.md` | Policy statement JSON schema |
 | `docs/schema/Dynamic_Group_Schema.md` | Dynamic group JSON schema |
-| `Contributing.md` | Development workflow and tests |
 | `docs/Roadmap.md` | Expected changes and future improvements |
+| `Contributing.md` | Development workflow and tests |
 | `LICENSE.md` | BSD 3-Clause license text |
 
 ---
