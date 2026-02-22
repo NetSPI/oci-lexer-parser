@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          }
+        ]
+      },
+      "actions": {
+        "type": "unknown",
+        "values": []
+      },
+      "resources": {
+        "type": "unknown",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    }
+  ],
+  "diagnostics": {
+    "errors": [
+      {
+        "line": 1,
+        "column": 22,
+        "message": "mismatched input 'in' expecting {MANAGE, USE, READ, INSPECT, '{', WORD}",
+        "offending": "in",
+        "expected": null,
+        "statement_index": 1,
+        "line_text": "allow group Admins to in tenancy",
+        "caret": "                      ^"
+      }
+    ],
+    "error_count": 1
+  }
+}

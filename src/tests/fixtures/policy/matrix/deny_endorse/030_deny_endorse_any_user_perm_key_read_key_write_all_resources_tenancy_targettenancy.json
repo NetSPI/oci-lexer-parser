@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_endorse",
+      "subject": {
+        "type": "any-user",
+        "values": []
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "TargetTenancy"
+        ]
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment-path",
+        "values": [
+          "Root",
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

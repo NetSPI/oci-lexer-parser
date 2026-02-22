@@ -1,0 +1,1 @@
+allow group Admins to manage all-resources in tenancy where any { request.region = 'us-ashburn-1', all { request.user.name = /__PSM*/, target.user.name = 'user@example.test' } }

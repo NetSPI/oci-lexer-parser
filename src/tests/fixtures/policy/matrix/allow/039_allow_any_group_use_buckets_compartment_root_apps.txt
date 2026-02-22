@@ -1,0 +1,1 @@
+allow any-group to use buckets in compartment Root:Apps

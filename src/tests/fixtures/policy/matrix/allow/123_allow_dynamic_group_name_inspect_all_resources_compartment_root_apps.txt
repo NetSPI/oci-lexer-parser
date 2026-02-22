@@ -1,0 +1,1 @@
+allow dynamic-group DGs to inspect all-resources in compartment Root:Apps

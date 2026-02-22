@@ -1,0 +1,1 @@
+endorse dynamic-group DGs to read buckets in any-tenancy

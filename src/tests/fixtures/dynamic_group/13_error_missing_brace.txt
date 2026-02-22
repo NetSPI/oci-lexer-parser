@@ -1,0 +1,1 @@
+ALL { resource.type = 'instance', instance.compartment.id = 'ocid1.compartment.oc1..example'

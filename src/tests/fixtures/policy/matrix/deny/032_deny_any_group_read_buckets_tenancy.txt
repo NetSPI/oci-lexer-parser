@@ -1,0 +1,1 @@
+deny any-group to read buckets in tenancy

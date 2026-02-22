@@ -1,0 +1,1 @@
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa

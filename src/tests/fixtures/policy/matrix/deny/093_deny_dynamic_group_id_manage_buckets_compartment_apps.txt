@@ -1,0 +1,1 @@
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment Apps

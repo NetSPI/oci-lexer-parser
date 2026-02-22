@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "any-user",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "inspect"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

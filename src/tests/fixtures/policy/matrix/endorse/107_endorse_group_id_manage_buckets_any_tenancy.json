@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group-id",
+        "values": [
+          {
+            "label": "ocid1.group.oc1..aaaa"
+          }
+        ]
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      }
+    }
+  ]
+}

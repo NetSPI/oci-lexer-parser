@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

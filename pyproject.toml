@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oci-lexer-parser"
+version = "0.1.1"
+description = "Parse OCI IAM policy statements and dynamic group matching rules into JSON-friendly dicts using ANTLR4."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Scott (@WebbinRoot)" }]
+keywords = ["oracle cloud", "oci", "iam policy", "iam statement", "antlr", "parser"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Topic :: Security",
+  "Typing :: Typed"
+]
+
+# Keep runtime deps minimal; commit generated ANTLR code.
+dependencies = [
+  "antlr4-python3-runtime>=4.13.2,<4.14"
+]
+
+[project.urls]
+Homepage = "https://github.com/NetSPI/oci-lexer-parser"
+Repository = "https://github.com/NetSPI/oci-lexer-parser"
+Issues = "https://github.com/NetSPI/oci-lexer-parser/issues"
+
+# Declares a console script. After install, users get an oci-lexer-parse command that calls oci_lexer_parser.cli.main().
+[project.scripts]
+oci-lexer-parse = "oci_lexer_parser.cli:main"
+oci-lexer-parser = "oci_lexer_parser.cli:main"
+
+# Optional: handy dev bundle for CI & contributors
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0.2"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["oci_lexer_parser*"]
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+# Ensure generated ANTLR code and grammar are inside the wheel
+[tool.setuptools.package-data]
+oci_lexer_parser = [
+  "py.typed",
+  "grammar/*.g4",
+  "grammar/gen/*.py",
+  "grammar/gen/*.tokens",
+  "grammar/gen/*.interp"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["src/tests"]
+norecursedirs = [".*", "build", "dist"]
+markers = [
+  "generate_json: tests that generate JSON outputs when GENERATE_JSON=1 is set",
+]

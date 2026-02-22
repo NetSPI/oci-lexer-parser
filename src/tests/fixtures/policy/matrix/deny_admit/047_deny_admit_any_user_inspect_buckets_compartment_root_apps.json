@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_admit",
+      "subject": {
+        "type": "any-user",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "inspect"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment-path",
+        "values": [
+          "Root",
+          "Apps"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

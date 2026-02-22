@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "dynamic-group",
+        "name": "DG"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.dynamicgroup.oc1..aaaa"
+      }
+    }
+  ]
+}

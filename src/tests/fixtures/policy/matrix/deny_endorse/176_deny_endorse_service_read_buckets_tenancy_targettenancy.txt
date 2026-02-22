@@ -1,0 +1,1 @@
+deny endorse service faas to read buckets in tenancy TargetTenancy

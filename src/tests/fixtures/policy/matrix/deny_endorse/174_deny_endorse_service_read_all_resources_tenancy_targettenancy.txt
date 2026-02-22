@@ -1,0 +1,1 @@
+deny endorse service faas to read all-resources in tenancy TargetTenancy

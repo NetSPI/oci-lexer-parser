@@ -1,0 +1,1 @@
+deny admit any-user of tenancy SrcTenancy to inspect all-resources in compartment Apps

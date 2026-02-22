@@ -1,0 +1,5 @@
+define group Team/Dev as 'ocid1.group.oc1..dev'
+define dynamic-group Runtimes as 'ocid1.dynamicgroup.oc1..rts'
+
+allow group Team/Dev to read all-resources in tenancy
+allow dynamic-group Runtimes to use buckets in compartment 'apps'

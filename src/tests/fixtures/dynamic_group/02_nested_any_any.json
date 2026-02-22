@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "level": 2,
+      "expr": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "group",
+            "mode": "any",
+            "items": [
+              {
+                "type": "clause",
+                "node": {
+                  "lhs": "instance.compartment.id",
+                  "op": "eq",
+                  "rhs": {
+                    "type": "literal",
+                    "value": "ocid1.compartment.oc1.phx:aaa"
+                  }
+                }
+              },
+              {
+                "type": "clause",
+                "node": {
+                  "lhs": "instance.compartment.id",
+                  "op": "eq",
+                  "rhs": {
+                    "type": "ocid",
+                    "value": "ocid1.compartment.oc1.phx.bbb"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "instance.compartment.id",
+              "op": "eq",
+              "rhs": {
+                "type": "literal",
+                "value": "ocid1.compartment.oc1.phx:aaa"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

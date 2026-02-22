@@ -1,0 +1,1 @@
+endorse dynamic-group DGs to inspect all-resources in any-tenancy

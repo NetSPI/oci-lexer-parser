@@ -1,0 +1,1 @@
+endorse service faas to {KEY_READ, KEY_WRITE} buckets in any-tenancy

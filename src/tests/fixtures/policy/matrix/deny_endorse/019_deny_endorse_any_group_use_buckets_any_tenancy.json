@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_endorse",
+      "subject": {
+        "type": "any-group",
+        "values": []
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      }
+    }
+  ]
+}

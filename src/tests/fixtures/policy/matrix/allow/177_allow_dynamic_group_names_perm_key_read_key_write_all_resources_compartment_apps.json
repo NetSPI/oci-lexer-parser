@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DGs"
+          },
+          {
+            "label": "DGs2"
+          }
+        ]
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

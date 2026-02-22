@@ -1,0 +1,1 @@
+allow dynamic-group DGs, DGs2 to manage buckets in compartment Apps

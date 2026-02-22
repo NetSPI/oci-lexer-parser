@@ -1,0 +1,1 @@
+deny service faas to read all-resources in compartment Root:Apps

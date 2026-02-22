@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "group",
+        "name": "G"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.group.oc1..aaaa"
+      }
+    }
+  ]
+}

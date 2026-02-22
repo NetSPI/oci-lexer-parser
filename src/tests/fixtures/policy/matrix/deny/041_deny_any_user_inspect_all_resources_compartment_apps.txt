@@ -1,0 +1,1 @@
+deny any-user to inspect all-resources in compartment Apps

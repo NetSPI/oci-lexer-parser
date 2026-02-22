@@ -1,0 +1,1 @@
+allow any-group to read all-resources in tenancy

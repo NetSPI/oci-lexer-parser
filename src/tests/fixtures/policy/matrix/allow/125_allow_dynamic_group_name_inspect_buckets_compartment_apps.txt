@@ -1,0 +1,1 @@
+allow dynamic-group DGs to inspect buckets in compartment Apps

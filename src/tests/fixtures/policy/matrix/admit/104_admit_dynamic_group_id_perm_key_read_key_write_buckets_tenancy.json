@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "dynamic-group-id",
+        "values": [
+          {
+            "label": "ocid1.dynamicgroup.oc1..aaaa"
+          }
+        ]
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa

@@ -1,0 +1,1 @@
+allow group Admins to use buckets in compartment Apps

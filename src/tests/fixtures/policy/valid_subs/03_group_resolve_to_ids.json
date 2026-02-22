@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "group",
+        "name": "Team/Dev"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.group.oc1..dev"
+      }
+    },
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "dynamic-group",
+        "name": "Runtimes"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.dynamicgroup.oc1..rts"
+      }
+    },
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group-id",
+        "values": [
+          {
+            "label": "ocid1.group.oc1..dev"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    },
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "dynamic-group-id",
+        "values": [
+          {
+            "label": "ocid1.dynamicgroup.oc1..rts"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "apps"
+        ]
+      }
+    }
+  ]
+}

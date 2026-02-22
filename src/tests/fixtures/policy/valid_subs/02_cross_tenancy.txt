@@ -1,0 +1,5 @@
+define tenancy SrcTenancy as 'ocid1.tenancy.oc1..src'
+define tenancy DestTenancy as 'ocid1.tenancy.oc1..dest'
+
+admit group Migrators of tenancy SrcTenancy to use buckets in tenancy
+Endorse group DatabaseToolsAdministrators to manage database-tools-family in any-tenancy

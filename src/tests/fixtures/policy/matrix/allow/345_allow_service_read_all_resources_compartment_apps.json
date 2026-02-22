@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "service",
+        "values": [
+          {
+            "label": "faas"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

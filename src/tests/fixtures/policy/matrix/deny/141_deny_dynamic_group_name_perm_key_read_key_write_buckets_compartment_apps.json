@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DGs"
+          }
+        ]
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

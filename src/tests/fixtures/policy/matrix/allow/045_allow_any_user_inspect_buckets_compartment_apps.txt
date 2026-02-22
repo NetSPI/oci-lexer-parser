@@ -1,0 +1,1 @@
+allow any-user to inspect buckets in compartment Apps

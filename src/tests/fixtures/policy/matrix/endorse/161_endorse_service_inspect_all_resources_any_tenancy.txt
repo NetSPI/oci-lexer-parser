@@ -1,0 +1,1 @@
+endorse service faas to inspect all-resources in any-tenancy

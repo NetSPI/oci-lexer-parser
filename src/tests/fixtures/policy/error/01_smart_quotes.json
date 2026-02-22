@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "statements": [],
+  "diagnostics": {
+    "errors": [
+      {
+        "message": "Invalid character '\u2019' (U+2019) at position 47. Only printable ASCII is supported."
+      }
+    ],
+    "error_count": 1
+  }
+}

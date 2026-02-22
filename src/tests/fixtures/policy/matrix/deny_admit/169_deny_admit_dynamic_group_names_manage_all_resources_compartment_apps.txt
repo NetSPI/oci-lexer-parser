@@ -1,0 +1,1 @@
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment Apps

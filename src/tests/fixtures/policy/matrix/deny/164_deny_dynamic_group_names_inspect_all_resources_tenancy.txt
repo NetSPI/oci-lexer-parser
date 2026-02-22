@@ -1,0 +1,1 @@
+deny dynamic-group DGs, DGs2 to inspect all-resources in tenancy

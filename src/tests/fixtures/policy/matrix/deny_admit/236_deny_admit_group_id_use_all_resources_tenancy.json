@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_admit",
+      "subject": {
+        "type": "group-id",
+        "values": [
+          {
+            "label": "ocid1.group.oc1..aaaa"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

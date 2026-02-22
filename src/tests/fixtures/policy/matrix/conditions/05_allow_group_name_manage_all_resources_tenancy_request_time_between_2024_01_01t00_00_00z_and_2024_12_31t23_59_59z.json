@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "conditions": {
+        "type": "group",
+        "mode": "all",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "request.time",
+              "op": "between",
+              "rhs": {
+                "type": "range",
+                "from": {
+                  "type": "literal",
+                  "value": "2024-01-01T00:00:00Z"
+                },
+                "to": {
+                  "type": "literal",
+                  "value": "2024-12-31T23:59:59Z"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

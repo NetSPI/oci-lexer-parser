@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_endorse",
+      "subject": {
+        "type": "group-id",
+        "values": [
+          {
+            "label": "ocid1.group.oc1..aaaa"
+          }
+        ]
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      }
+    }
+  ]
+}

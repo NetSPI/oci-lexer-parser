@@ -1,0 +1,1 @@
+deny service faas to manage buckets in compartment id ocid1.compartment.oc1..aaaa

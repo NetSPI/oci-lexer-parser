@@ -1,0 +1,1 @@
+deny admit any-group of tenancy SrcTenancy to inspect buckets in tenancy

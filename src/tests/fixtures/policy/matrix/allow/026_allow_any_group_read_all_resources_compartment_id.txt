@@ -1,0 +1,1 @@
+allow any-group to read all-resources in compartment id ocid1.compartment.oc1..aaaa

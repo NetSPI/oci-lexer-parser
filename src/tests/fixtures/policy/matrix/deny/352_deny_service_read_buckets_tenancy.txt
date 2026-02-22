@@ -1,0 +1,1 @@
+deny service faas to read buckets in tenancy

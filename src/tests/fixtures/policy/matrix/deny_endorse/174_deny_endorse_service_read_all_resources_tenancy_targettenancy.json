@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_endorse",
+      "subject": {
+        "type": "service",
+        "values": [
+          {
+            "label": "faas"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "TargetTenancy"
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      }
+    }
+  ]
+}

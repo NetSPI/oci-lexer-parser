@@ -1,0 +1,1 @@
+deny endorse service faas to manage buckets in any-tenancy

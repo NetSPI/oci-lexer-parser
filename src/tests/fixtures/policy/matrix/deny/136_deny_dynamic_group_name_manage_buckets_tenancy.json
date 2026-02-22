@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DGs"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    }
+  ]
+}

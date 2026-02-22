@@ -1,0 +1,1 @@
+admit service faas of tenancy SrcTenancy to manage buckets in compartment Apps

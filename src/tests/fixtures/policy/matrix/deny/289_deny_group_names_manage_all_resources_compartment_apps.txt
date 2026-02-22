@@ -1,0 +1,1 @@
+deny group Admins, Developers to manage all-resources in compartment Apps

@@ -1,0 +1,1 @@
+allow group Admins to inspect all-resources in compartment Apps

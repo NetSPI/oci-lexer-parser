@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "T"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..abc"
+      }
+    },
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "A"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    },
+    {
+      "kind": "deny",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DG"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "apps"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Endorsers"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "T"
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "associate"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      }
+    }
+  ]
+}

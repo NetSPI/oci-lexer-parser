@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "any-group",
+        "values": []
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+allow group TeamA to use objects in compartment root:apps:demo
+allow group TeamA to read all-resources in tenancy

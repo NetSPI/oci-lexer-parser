@@ -1,0 +1,1 @@
+allow dynamic-group DGs to use buckets in tenancy

@@ -1,0 +1,1 @@
+deny group Admins to use buckets in compartment Root:Apps

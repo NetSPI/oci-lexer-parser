@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny",
+      "subject": {
+        "type": "any-group",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment-id",
+        "values": [
+          "ocid1.compartment.oc1..aaaa"
+        ]
+      }
+    }
+  ]
+}

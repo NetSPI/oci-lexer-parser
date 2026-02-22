@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "any-user",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+/* preamble comment */
+allow   group  A   to   read   all-resources   in   tenancy   # eol comment
+/* mid */ deny dynamic-group DG to manage buckets in compartment 'apps' /* tail */

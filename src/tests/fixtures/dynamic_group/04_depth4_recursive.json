@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "level": 4,
+      "expr": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "group",
+            "mode": "any",
+            "items": [
+              {
+                "type": "group",
+                "mode": "any",
+                "items": [
+                  {
+                    "type": "group",
+                    "mode": "any",
+                    "items": [
+                      {
+                        "type": "clause",
+                        "node": {
+                          "lhs": "instance.id",
+                          "op": "eq",
+                          "rhs": {
+                            "type": "ocid",
+                            "value": "ocid1.instance.oc1..example"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

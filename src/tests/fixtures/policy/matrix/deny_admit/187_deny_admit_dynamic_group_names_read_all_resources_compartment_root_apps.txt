@@ -1,0 +1,1 @@
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment Root:Apps

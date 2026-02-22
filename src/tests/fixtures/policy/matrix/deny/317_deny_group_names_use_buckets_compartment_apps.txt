@@ -1,0 +1,1 @@
+deny group Admins, Developers to use buckets in compartment Apps

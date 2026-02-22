@@ -1,0 +1,1 @@
+admit any-user of tenancy SrcTenancy to manage all-resources in tenancy

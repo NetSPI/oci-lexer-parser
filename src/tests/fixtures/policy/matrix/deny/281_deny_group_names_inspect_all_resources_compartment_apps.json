@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          },
+          {
+            "label": "Developers"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "inspect"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

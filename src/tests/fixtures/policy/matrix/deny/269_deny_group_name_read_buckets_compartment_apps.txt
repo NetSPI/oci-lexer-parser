@@ -1,0 +1,1 @@
+deny group Admins to read buckets in compartment Apps

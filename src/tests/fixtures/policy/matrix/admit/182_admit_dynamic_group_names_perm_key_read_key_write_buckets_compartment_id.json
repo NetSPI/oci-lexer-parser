@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DGs"
+          },
+          {
+            "label": "DGs2"
+          }
+        ]
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment-id",
+        "values": [
+          "ocid1.compartment.oc1..aaaa"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

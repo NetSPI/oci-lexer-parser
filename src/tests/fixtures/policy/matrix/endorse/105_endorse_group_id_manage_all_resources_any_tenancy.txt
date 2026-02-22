@@ -1,0 +1,1 @@
+endorse group id ocid1.group.oc1..aaaa to manage all-resources in any-tenancy

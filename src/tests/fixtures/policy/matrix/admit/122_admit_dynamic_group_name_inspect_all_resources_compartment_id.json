@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DGs"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "inspect"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment-id",
+        "values": [
+          "ocid1.compartment.oc1..aaaa"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

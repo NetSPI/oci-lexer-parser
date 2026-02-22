@@ -1,0 +1,1 @@
+admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa

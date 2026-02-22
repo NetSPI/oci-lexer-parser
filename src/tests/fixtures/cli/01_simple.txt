@@ -1,0 +1,1 @@
+allow group A to read all-resources in tenancy

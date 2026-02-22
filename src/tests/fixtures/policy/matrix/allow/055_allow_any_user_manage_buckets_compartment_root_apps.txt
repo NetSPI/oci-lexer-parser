@@ -1,0 +1,1 @@
+allow any-user to manage buckets in compartment Root:Apps

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "TeamA"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "objects"
+        ]
+      },
+      "location": {
+        "type": "compartment-path",
+        "values": [
+          "root",
+          "apps",
+          "demo"
+        ]
+      }
+    },
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "TeamA"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    }
+  ]
+}

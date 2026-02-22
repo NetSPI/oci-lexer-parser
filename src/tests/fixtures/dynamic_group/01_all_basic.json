@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "level": 1,
+      "expr": {
+        "type": "group",
+        "mode": "all",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "instance.compartment.id",
+              "op": "eq",
+              "rhs": {
+                "type": "ocid",
+                "value": "ocid1.compartment.oc1..example"
+              }
+            }
+          },
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "resource.type",
+              "op": "eq",
+              "rhs": {
+                "type": "literal",
+                "value": "instance"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

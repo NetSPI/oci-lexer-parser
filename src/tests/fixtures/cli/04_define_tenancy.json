@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "T"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..abc"
+      }
+    }
+  ]
+}

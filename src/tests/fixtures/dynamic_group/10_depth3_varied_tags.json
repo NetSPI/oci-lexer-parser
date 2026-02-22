@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "level": 3,
+      "expr": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "tag.team.env.value",
+              "op": "eq",
+              "rhs": {
+                "type": "literal",
+                "value": "prod"
+              }
+            }
+          },
+          {
+            "type": "group",
+            "mode": "all",
+            "items": [
+              {
+                "type": "clause",
+                "node": {
+                  "lhs": "tag.finance.costcenter.value",
+                  "op": "neq",
+                  "rhs": {
+                    "type": "literal",
+                    "value": "1234"
+                  }
+                }
+              },
+              {
+                "type": "group",
+                "mode": "any",
+                "items": [
+                  {
+                    "type": "clause",
+                    "node": {
+                      "lhs": "tag.app.tier.value",
+                      "op": "eq",
+                      "rhs": {
+                        "type": "literal",
+                        "value": "backend"
+                      }
+                    }
+                  },
+                  {
+                    "type": "clause",
+                    "node": {
+                      "lhs": "instance.compartment.id",
+                      "op": "eq",
+                      "rhs": {
+                        "type": "ocid",
+                        "value": "ocid1.compartment.oc1..aaaa"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

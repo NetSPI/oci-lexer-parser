@@ -1,0 +1,1 @@
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in tenancy

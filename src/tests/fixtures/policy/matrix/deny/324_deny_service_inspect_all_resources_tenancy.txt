@@ -1,0 +1,1 @@
+deny service faas to inspect all-resources in tenancy

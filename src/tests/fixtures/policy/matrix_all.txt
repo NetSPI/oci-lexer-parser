@@ -1,0 +1,1814 @@
+admit any-group of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit any-group of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to inspect all-resources in tenancy
+admit any-group of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit any-group of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to inspect buckets in tenancy
+admit any-group of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit any-group of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to manage all-resources in tenancy
+admit any-group of tenancy SrcTenancy to manage buckets in compartment Apps
+admit any-group of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to manage buckets in tenancy
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit any-group of tenancy SrcTenancy to read all-resources in compartment Apps
+admit any-group of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to read all-resources in tenancy
+admit any-group of tenancy SrcTenancy to read buckets in compartment Apps
+admit any-group of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to read buckets in tenancy
+admit any-group of tenancy SrcTenancy to use all-resources in compartment Apps
+admit any-group of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to use all-resources in tenancy
+admit any-group of tenancy SrcTenancy to use buckets in compartment Apps
+admit any-group of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-group of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit any-group of tenancy SrcTenancy to use buckets in tenancy
+admit any-user of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit any-user of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to inspect all-resources in tenancy
+admit any-user of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit any-user of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to inspect buckets in tenancy
+admit any-user of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit any-user of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to manage all-resources in tenancy
+admit any-user of tenancy SrcTenancy to manage buckets in compartment Apps
+admit any-user of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to manage buckets in tenancy
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit any-user of tenancy SrcTenancy to read all-resources in compartment Apps
+admit any-user of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to read all-resources in tenancy
+admit any-user of tenancy SrcTenancy to read buckets in compartment Apps
+admit any-user of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to read buckets in tenancy
+admit any-user of tenancy SrcTenancy to use all-resources in compartment Apps
+admit any-user of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to use all-resources in tenancy
+admit any-user of tenancy SrcTenancy to use buckets in compartment Apps
+admit any-user of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit any-user of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit any-user of tenancy SrcTenancy to use buckets in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in tenancy
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to read buckets in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to read buckets in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in tenancy
+admit dynamic-group DGs of tenancy SrcTenancy to use buckets in compartment Apps
+admit dynamic-group DGs of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit dynamic-group DGs of tenancy SrcTenancy to use buckets in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in tenancy
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in compartment Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in tenancy
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in tenancy
+admit group Admins of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit group Admins of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to inspect all-resources in tenancy
+admit group Admins of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit group Admins of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to inspect buckets in tenancy
+admit group Admins of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit group Admins of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to manage all-resources in tenancy
+admit group Admins of tenancy SrcTenancy to manage buckets in compartment Apps
+admit group Admins of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to manage buckets in tenancy
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit group Admins of tenancy SrcTenancy to read all-resources in compartment Apps
+admit group Admins of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to read all-resources in tenancy
+admit group Admins of tenancy SrcTenancy to read buckets in compartment Apps
+admit group Admins of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to read buckets in tenancy
+admit group Admins of tenancy SrcTenancy to use all-resources in compartment Apps
+admit group Admins of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to use all-resources in tenancy
+admit group Admins of tenancy SrcTenancy to use buckets in compartment Apps
+admit group Admins of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit group Admins of tenancy SrcTenancy to use buckets in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to manage buckets in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to manage buckets in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to read all-resources in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to read all-resources in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to read buckets in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to read buckets in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to use all-resources in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to use all-resources in tenancy
+admit group Admins, Developers of tenancy SrcTenancy to use buckets in compartment Apps
+admit group Admins, Developers of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit group Admins, Developers of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit group Admins, Developers of tenancy SrcTenancy to use buckets in tenancy
+admit service faas of tenancy SrcTenancy to inspect all-resources in compartment Apps
+admit service faas of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to inspect all-resources in tenancy
+admit service faas of tenancy SrcTenancy to inspect buckets in compartment Apps
+admit service faas of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to inspect buckets in tenancy
+admit service faas of tenancy SrcTenancy to manage all-resources in compartment Apps
+admit service faas of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to manage all-resources in tenancy
+admit service faas of tenancy SrcTenancy to manage buckets in compartment Apps
+admit service faas of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to manage buckets in tenancy
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+admit service faas of tenancy SrcTenancy to read all-resources in compartment Apps
+admit service faas of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to read all-resources in tenancy
+admit service faas of tenancy SrcTenancy to read buckets in compartment Apps
+admit service faas of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to read buckets in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to read buckets in tenancy
+admit service faas of tenancy SrcTenancy to use all-resources in compartment Apps
+admit service faas of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to use all-resources in tenancy
+admit service faas of tenancy SrcTenancy to use buckets in compartment Apps
+admit service faas of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+admit service faas of tenancy SrcTenancy to use buckets in compartment Root:Apps
+admit service faas of tenancy SrcTenancy to use buckets in tenancy
+allow any-group to inspect all-resources in compartment Apps
+allow any-group to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to inspect all-resources in compartment Root:Apps
+allow any-group to inspect all-resources in tenancy
+allow any-group to inspect buckets in compartment Apps
+allow any-group to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to inspect buckets in compartment Root:Apps
+allow any-group to inspect buckets in tenancy
+allow any-group to manage all-resources in compartment Apps
+allow any-group to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to manage all-resources in compartment Root:Apps
+allow any-group to manage all-resources in tenancy
+allow any-group to manage buckets in compartment Apps
+allow any-group to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to manage buckets in compartment Root:Apps
+allow any-group to manage buckets in tenancy
+allow any-group to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow any-group to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow any-group to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow any-group to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow any-group to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow any-group to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow any-group to read all-resources in compartment Apps
+allow any-group to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to read all-resources in compartment Root:Apps
+allow any-group to read all-resources in tenancy
+allow any-group to read buckets in compartment Apps
+allow any-group to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to read buckets in compartment Root:Apps
+allow any-group to read buckets in tenancy
+allow any-group to use all-resources in compartment Apps
+allow any-group to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to use all-resources in compartment Root:Apps
+allow any-group to use all-resources in tenancy
+allow any-group to use buckets in compartment Apps
+allow any-group to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-group to use buckets in compartment Root:Apps
+allow any-group to use buckets in tenancy
+allow any-user to inspect all-resources in compartment Apps
+allow any-user to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to inspect all-resources in compartment Root:Apps
+allow any-user to inspect all-resources in tenancy
+allow any-user to inspect buckets in compartment Apps
+allow any-user to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to inspect buckets in compartment Root:Apps
+allow any-user to inspect buckets in tenancy
+allow any-user to manage all-resources in compartment Apps
+allow any-user to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to manage all-resources in compartment Root:Apps
+allow any-user to manage all-resources in tenancy
+allow any-user to manage buckets in compartment Apps
+allow any-user to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to manage buckets in compartment Root:Apps
+allow any-user to manage buckets in tenancy
+allow any-user to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow any-user to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow any-user to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow any-user to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow any-user to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow any-user to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow any-user to read all-resources in compartment Apps
+allow any-user to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to read all-resources in compartment Root:Apps
+allow any-user to read all-resources in tenancy
+allow any-user to read buckets in compartment Apps
+allow any-user to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to read buckets in compartment Root:Apps
+allow any-user to read buckets in tenancy
+allow any-user to use all-resources in compartment Apps
+allow any-user to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to use all-resources in compartment Root:Apps
+allow any-user to use all-resources in tenancy
+allow any-user to use buckets in compartment Apps
+allow any-user to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow any-user to use buckets in compartment Root:Apps
+allow any-user to use buckets in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in tenancy
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in compartment Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in compartment Root:Apps
+allow dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in tenancy
+allow dynamic-group DGs to inspect all-resources in compartment Apps
+allow dynamic-group DGs to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to inspect all-resources in compartment Root:Apps
+allow dynamic-group DGs to inspect all-resources in tenancy
+allow dynamic-group DGs to inspect buckets in compartment Apps
+allow dynamic-group DGs to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to inspect buckets in compartment Root:Apps
+allow dynamic-group DGs to inspect buckets in tenancy
+allow dynamic-group DGs to manage all-resources in compartment Apps
+allow dynamic-group DGs to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to manage all-resources in compartment Root:Apps
+allow dynamic-group DGs to manage all-resources in tenancy
+allow dynamic-group DGs to manage buckets in compartment Apps
+allow dynamic-group DGs to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to manage buckets in compartment Root:Apps
+allow dynamic-group DGs to manage buckets in tenancy
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow dynamic-group DGs to read all-resources in compartment Apps
+allow dynamic-group DGs to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to read all-resources in compartment Root:Apps
+allow dynamic-group DGs to read all-resources in tenancy
+allow dynamic-group DGs to read buckets in compartment Apps
+allow dynamic-group DGs to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to read buckets in compartment Root:Apps
+allow dynamic-group DGs to read buckets in tenancy
+allow dynamic-group DGs to use all-resources in compartment Apps
+allow dynamic-group DGs to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to use all-resources in compartment Root:Apps
+allow dynamic-group DGs to use all-resources in tenancy
+allow dynamic-group DGs to use buckets in compartment Apps
+allow dynamic-group DGs to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs to use buckets in compartment Root:Apps
+allow dynamic-group DGs to use buckets in tenancy
+allow dynamic-group DGs, DGs2 to inspect all-resources in compartment Apps
+allow dynamic-group DGs, DGs2 to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to inspect all-resources in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to inspect all-resources in tenancy
+allow dynamic-group DGs, DGs2 to inspect buckets in compartment Apps
+allow dynamic-group DGs, DGs2 to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to inspect buckets in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to inspect buckets in tenancy
+allow dynamic-group DGs, DGs2 to manage all-resources in compartment Apps
+allow dynamic-group DGs, DGs2 to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to manage all-resources in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to manage all-resources in tenancy
+allow dynamic-group DGs, DGs2 to manage buckets in compartment Apps
+allow dynamic-group DGs, DGs2 to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to manage buckets in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to manage buckets in tenancy
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow dynamic-group DGs, DGs2 to read all-resources in compartment Apps
+allow dynamic-group DGs, DGs2 to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to read all-resources in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to read all-resources in tenancy
+allow dynamic-group DGs, DGs2 to read buckets in compartment Apps
+allow dynamic-group DGs, DGs2 to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to read buckets in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to read buckets in tenancy
+allow dynamic-group DGs, DGs2 to use all-resources in compartment Apps
+allow dynamic-group DGs, DGs2 to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to use all-resources in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to use all-resources in tenancy
+allow dynamic-group DGs, DGs2 to use buckets in compartment Apps
+allow dynamic-group DGs, DGs2 to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow dynamic-group DGs, DGs2 to use buckets in compartment Root:Apps
+allow dynamic-group DGs, DGs2 to use buckets in tenancy
+allow group id ocid1.group.oc1..aaaa to inspect all-resources in compartment Apps
+allow group id ocid1.group.oc1..aaaa to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to inspect all-resources in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to inspect all-resources in tenancy
+allow group id ocid1.group.oc1..aaaa to inspect buckets in compartment Apps
+allow group id ocid1.group.oc1..aaaa to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to inspect buckets in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to inspect buckets in tenancy
+allow group id ocid1.group.oc1..aaaa to manage all-resources in compartment Apps
+allow group id ocid1.group.oc1..aaaa to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to manage all-resources in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to manage all-resources in tenancy
+allow group id ocid1.group.oc1..aaaa to manage buckets in compartment Apps
+allow group id ocid1.group.oc1..aaaa to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to manage buckets in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to manage buckets in tenancy
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow group id ocid1.group.oc1..aaaa to read all-resources in compartment Apps
+allow group id ocid1.group.oc1..aaaa to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to read all-resources in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to read all-resources in tenancy
+allow group id ocid1.group.oc1..aaaa to read buckets in compartment Apps
+allow group id ocid1.group.oc1..aaaa to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to read buckets in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to read buckets in tenancy
+allow group id ocid1.group.oc1..aaaa to use all-resources in compartment Apps
+allow group id ocid1.group.oc1..aaaa to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to use all-resources in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to use all-resources in tenancy
+allow group id ocid1.group.oc1..aaaa to use buckets in compartment Apps
+allow group id ocid1.group.oc1..aaaa to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group id ocid1.group.oc1..aaaa to use buckets in compartment Root:Apps
+allow group id ocid1.group.oc1..aaaa to use buckets in tenancy
+allow group Admins to inspect all-resources in compartment Apps
+allow group Admins to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to inspect all-resources in compartment Root:Apps
+allow group Admins to inspect all-resources in tenancy
+allow group Admins to inspect buckets in compartment Apps
+allow group Admins to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to inspect buckets in compartment Root:Apps
+allow group Admins to inspect buckets in tenancy
+allow group Admins to manage all-resources in compartment Apps
+allow group Admins to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to manage all-resources in compartment Root:Apps
+allow group Admins to manage all-resources in tenancy
+allow group Admins to manage buckets in compartment Apps
+allow group Admins to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to manage buckets in compartment Root:Apps
+allow group Admins to manage buckets in tenancy
+allow group Admins to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow group Admins to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow group Admins to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow group Admins to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow group Admins to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow group Admins to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow group Admins to read all-resources in compartment Apps
+allow group Admins to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to read all-resources in compartment Root:Apps
+allow group Admins to read all-resources in tenancy
+allow group Admins to read buckets in compartment Apps
+allow group Admins to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to read buckets in compartment Root:Apps
+allow group Admins to read buckets in tenancy
+allow group Admins to use all-resources in compartment Apps
+allow group Admins to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to use all-resources in compartment Root:Apps
+allow group Admins to use all-resources in tenancy
+allow group Admins to use buckets in compartment Apps
+allow group Admins to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins to use buckets in compartment Root:Apps
+allow group Admins to use buckets in tenancy
+allow group Admins, Developers to inspect all-resources in compartment Apps
+allow group Admins, Developers to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to inspect all-resources in compartment Root:Apps
+allow group Admins, Developers to inspect all-resources in tenancy
+allow group Admins, Developers to inspect buckets in compartment Apps
+allow group Admins, Developers to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to inspect buckets in compartment Root:Apps
+allow group Admins, Developers to inspect buckets in tenancy
+allow group Admins, Developers to manage all-resources in compartment Apps
+allow group Admins, Developers to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to manage all-resources in compartment Root:Apps
+allow group Admins, Developers to manage all-resources in tenancy
+allow group Admins, Developers to manage buckets in compartment Apps
+allow group Admins, Developers to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to manage buckets in compartment Root:Apps
+allow group Admins, Developers to manage buckets in tenancy
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow group Admins, Developers to read all-resources in compartment Apps
+allow group Admins, Developers to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to read all-resources in compartment Root:Apps
+allow group Admins, Developers to read all-resources in tenancy
+allow group Admins, Developers to read buckets in compartment Apps
+allow group Admins, Developers to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to read buckets in compartment Root:Apps
+allow group Admins, Developers to read buckets in tenancy
+allow group Admins, Developers to use all-resources in compartment Apps
+allow group Admins, Developers to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to use all-resources in compartment Root:Apps
+allow group Admins, Developers to use all-resources in tenancy
+allow group Admins, Developers to use buckets in compartment Apps
+allow group Admins, Developers to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow group Admins, Developers to use buckets in compartment Root:Apps
+allow group Admins, Developers to use buckets in tenancy
+allow service faas to inspect all-resources in compartment Apps
+allow service faas to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to inspect all-resources in compartment Root:Apps
+allow service faas to inspect all-resources in tenancy
+allow service faas to inspect buckets in compartment Apps
+allow service faas to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to inspect buckets in compartment Root:Apps
+allow service faas to inspect buckets in tenancy
+allow service faas to manage all-resources in compartment Apps
+allow service faas to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to manage all-resources in compartment Root:Apps
+allow service faas to manage all-resources in tenancy
+allow service faas to manage buckets in compartment Apps
+allow service faas to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to manage buckets in compartment Root:Apps
+allow service faas to manage buckets in tenancy
+allow service faas to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+allow service faas to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+allow service faas to {KEY_READ, KEY_WRITE} all-resources in tenancy
+allow service faas to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+allow service faas to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+allow service faas to {KEY_READ, KEY_WRITE} buckets in tenancy
+allow service faas to read all-resources in compartment Apps
+allow service faas to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to read all-resources in compartment Root:Apps
+allow service faas to read all-resources in tenancy
+allow service faas to read buckets in compartment Apps
+allow service faas to read buckets in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to read buckets in compartment Root:Apps
+allow service faas to read buckets in tenancy
+allow service faas to use all-resources in compartment Apps
+allow service faas to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to use all-resources in compartment Root:Apps
+allow service faas to use all-resources in tenancy
+allow service faas to use buckets in compartment Apps
+allow service faas to use buckets in compartment id ocid1.compartment.oc1..aaaa
+allow service faas to use buckets in compartment Root:Apps
+allow service faas to use buckets in tenancy
+allow group Admins to manage all-resources in tenancy where target.user.name = 'user@example.test'
+allow group Admins to manage all-resources in tenancy where request.region in ('us-ashburn-1', 'us-phoenix-1')
+allow group Admins to manage all-resources in tenancy where request.time before '2024-01-01T00:00:00Z'
+allow group Admins to manage all-resources in tenancy where request.time after '2024-01-01T00:00:00Z'
+allow group Admins to manage all-resources in tenancy where request.time between '2024-01-01T00:00:00Z' and '2024-12-31T23:59:59Z'
+allow group Admins to manage all-resources in tenancy where any { target.user.name = 'user@example.test', request.region = 'us-ashburn-1' }
+allow group Admins to manage all-resources in tenancy where all { request.region = 'us-ashburn-1', request.principal.type != 'Instance' }
+allow group Admins to manage all-resources in tenancy where request.user.name = /__PSM*/
+allow group Admins to manage all-resources in tenancy where request.principal.id = ocid1.instance.oc1..example
+allow group Admins to manage all-resources in tenancy where target.compartment.id = 'ocid1.compartment.oc1..example'
+define tenancy T as ocid1.tenancy.oc1..aaaa
+define group G as ocid1.group.oc1..aaaa
+define dynamic-group DG as ocid1.dynamicgroup.oc1..aaaa
+define compartment C as ocid1.compartment.oc1..aaaa
+deny any-group to inspect all-resources in compartment Apps
+deny any-group to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to inspect all-resources in compartment Root:Apps
+deny any-group to inspect all-resources in tenancy
+deny any-group to inspect buckets in compartment Apps
+deny any-group to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to inspect buckets in compartment Root:Apps
+deny any-group to inspect buckets in tenancy
+deny any-group to manage all-resources in compartment Apps
+deny any-group to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to manage all-resources in compartment Root:Apps
+deny any-group to manage all-resources in tenancy
+deny any-group to manage buckets in compartment Apps
+deny any-group to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to manage buckets in compartment Root:Apps
+deny any-group to manage buckets in tenancy
+deny any-group to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny any-group to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny any-group to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny any-group to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny any-group to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny any-group to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny any-group to read all-resources in compartment Apps
+deny any-group to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to read all-resources in compartment Root:Apps
+deny any-group to read all-resources in tenancy
+deny any-group to read buckets in compartment Apps
+deny any-group to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to read buckets in compartment Root:Apps
+deny any-group to read buckets in tenancy
+deny any-group to use all-resources in compartment Apps
+deny any-group to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to use all-resources in compartment Root:Apps
+deny any-group to use all-resources in tenancy
+deny any-group to use buckets in compartment Apps
+deny any-group to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-group to use buckets in compartment Root:Apps
+deny any-group to use buckets in tenancy
+deny any-user to inspect all-resources in compartment Apps
+deny any-user to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to inspect all-resources in compartment Root:Apps
+deny any-user to inspect all-resources in tenancy
+deny any-user to inspect buckets in compartment Apps
+deny any-user to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to inspect buckets in compartment Root:Apps
+deny any-user to inspect buckets in tenancy
+deny any-user to manage all-resources in compartment Apps
+deny any-user to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to manage all-resources in compartment Root:Apps
+deny any-user to manage all-resources in tenancy
+deny any-user to manage buckets in compartment Apps
+deny any-user to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to manage buckets in compartment Root:Apps
+deny any-user to manage buckets in tenancy
+deny any-user to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny any-user to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny any-user to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny any-user to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny any-user to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny any-user to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny any-user to read all-resources in compartment Apps
+deny any-user to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to read all-resources in compartment Root:Apps
+deny any-user to read all-resources in tenancy
+deny any-user to read buckets in compartment Apps
+deny any-user to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to read buckets in compartment Root:Apps
+deny any-user to read buckets in tenancy
+deny any-user to use all-resources in compartment Apps
+deny any-user to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to use all-resources in compartment Root:Apps
+deny any-user to use all-resources in tenancy
+deny any-user to use buckets in compartment Apps
+deny any-user to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny any-user to use buckets in compartment Root:Apps
+deny any-user to use buckets in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in tenancy
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in compartment Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in compartment Root:Apps
+deny dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in tenancy
+deny dynamic-group DGs to inspect all-resources in compartment Apps
+deny dynamic-group DGs to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to inspect all-resources in compartment Root:Apps
+deny dynamic-group DGs to inspect all-resources in tenancy
+deny dynamic-group DGs to inspect buckets in compartment Apps
+deny dynamic-group DGs to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to inspect buckets in compartment Root:Apps
+deny dynamic-group DGs to inspect buckets in tenancy
+deny dynamic-group DGs to manage all-resources in compartment Apps
+deny dynamic-group DGs to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to manage all-resources in compartment Root:Apps
+deny dynamic-group DGs to manage all-resources in tenancy
+deny dynamic-group DGs to manage buckets in compartment Apps
+deny dynamic-group DGs to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to manage buckets in compartment Root:Apps
+deny dynamic-group DGs to manage buckets in tenancy
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny dynamic-group DGs to read all-resources in compartment Apps
+deny dynamic-group DGs to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to read all-resources in compartment Root:Apps
+deny dynamic-group DGs to read all-resources in tenancy
+deny dynamic-group DGs to read buckets in compartment Apps
+deny dynamic-group DGs to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to read buckets in compartment Root:Apps
+deny dynamic-group DGs to read buckets in tenancy
+deny dynamic-group DGs to use all-resources in compartment Apps
+deny dynamic-group DGs to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to use all-resources in compartment Root:Apps
+deny dynamic-group DGs to use all-resources in tenancy
+deny dynamic-group DGs to use buckets in compartment Apps
+deny dynamic-group DGs to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs to use buckets in compartment Root:Apps
+deny dynamic-group DGs to use buckets in tenancy
+deny dynamic-group DGs, DGs2 to inspect all-resources in compartment Apps
+deny dynamic-group DGs, DGs2 to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to inspect all-resources in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to inspect all-resources in tenancy
+deny dynamic-group DGs, DGs2 to inspect buckets in compartment Apps
+deny dynamic-group DGs, DGs2 to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to inspect buckets in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to inspect buckets in tenancy
+deny dynamic-group DGs, DGs2 to manage all-resources in compartment Apps
+deny dynamic-group DGs, DGs2 to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to manage all-resources in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to manage all-resources in tenancy
+deny dynamic-group DGs, DGs2 to manage buckets in compartment Apps
+deny dynamic-group DGs, DGs2 to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to manage buckets in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to manage buckets in tenancy
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny dynamic-group DGs, DGs2 to read all-resources in compartment Apps
+deny dynamic-group DGs, DGs2 to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to read all-resources in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to read all-resources in tenancy
+deny dynamic-group DGs, DGs2 to read buckets in compartment Apps
+deny dynamic-group DGs, DGs2 to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to read buckets in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to read buckets in tenancy
+deny dynamic-group DGs, DGs2 to use all-resources in compartment Apps
+deny dynamic-group DGs, DGs2 to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to use all-resources in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to use all-resources in tenancy
+deny dynamic-group DGs, DGs2 to use buckets in compartment Apps
+deny dynamic-group DGs, DGs2 to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny dynamic-group DGs, DGs2 to use buckets in compartment Root:Apps
+deny dynamic-group DGs, DGs2 to use buckets in tenancy
+deny group id ocid1.group.oc1..aaaa to inspect all-resources in compartment Apps
+deny group id ocid1.group.oc1..aaaa to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to inspect all-resources in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to inspect all-resources in tenancy
+deny group id ocid1.group.oc1..aaaa to inspect buckets in compartment Apps
+deny group id ocid1.group.oc1..aaaa to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to inspect buckets in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to inspect buckets in tenancy
+deny group id ocid1.group.oc1..aaaa to manage all-resources in compartment Apps
+deny group id ocid1.group.oc1..aaaa to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to manage all-resources in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to manage all-resources in tenancy
+deny group id ocid1.group.oc1..aaaa to manage buckets in compartment Apps
+deny group id ocid1.group.oc1..aaaa to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to manage buckets in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to manage buckets in tenancy
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny group id ocid1.group.oc1..aaaa to read all-resources in compartment Apps
+deny group id ocid1.group.oc1..aaaa to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to read all-resources in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to read all-resources in tenancy
+deny group id ocid1.group.oc1..aaaa to read buckets in compartment Apps
+deny group id ocid1.group.oc1..aaaa to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to read buckets in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to read buckets in tenancy
+deny group id ocid1.group.oc1..aaaa to use all-resources in compartment Apps
+deny group id ocid1.group.oc1..aaaa to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to use all-resources in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to use all-resources in tenancy
+deny group id ocid1.group.oc1..aaaa to use buckets in compartment Apps
+deny group id ocid1.group.oc1..aaaa to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group id ocid1.group.oc1..aaaa to use buckets in compartment Root:Apps
+deny group id ocid1.group.oc1..aaaa to use buckets in tenancy
+deny group Admins to inspect all-resources in compartment Apps
+deny group Admins to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to inspect all-resources in compartment Root:Apps
+deny group Admins to inspect all-resources in tenancy
+deny group Admins to inspect buckets in compartment Apps
+deny group Admins to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to inspect buckets in compartment Root:Apps
+deny group Admins to inspect buckets in tenancy
+deny group Admins to manage all-resources in compartment Apps
+deny group Admins to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to manage all-resources in compartment Root:Apps
+deny group Admins to manage all-resources in tenancy
+deny group Admins to manage buckets in compartment Apps
+deny group Admins to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to manage buckets in compartment Root:Apps
+deny group Admins to manage buckets in tenancy
+deny group Admins to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny group Admins to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny group Admins to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny group Admins to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny group Admins to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny group Admins to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny group Admins to read all-resources in compartment Apps
+deny group Admins to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to read all-resources in compartment Root:Apps
+deny group Admins to read all-resources in tenancy
+deny group Admins to read buckets in compartment Apps
+deny group Admins to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to read buckets in compartment Root:Apps
+deny group Admins to read buckets in tenancy
+deny group Admins to use all-resources in compartment Apps
+deny group Admins to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to use all-resources in compartment Root:Apps
+deny group Admins to use all-resources in tenancy
+deny group Admins to use buckets in compartment Apps
+deny group Admins to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins to use buckets in compartment Root:Apps
+deny group Admins to use buckets in tenancy
+deny group Admins, Developers to inspect all-resources in compartment Apps
+deny group Admins, Developers to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to inspect all-resources in compartment Root:Apps
+deny group Admins, Developers to inspect all-resources in tenancy
+deny group Admins, Developers to inspect buckets in compartment Apps
+deny group Admins, Developers to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to inspect buckets in compartment Root:Apps
+deny group Admins, Developers to inspect buckets in tenancy
+deny group Admins, Developers to manage all-resources in compartment Apps
+deny group Admins, Developers to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to manage all-resources in compartment Root:Apps
+deny group Admins, Developers to manage all-resources in tenancy
+deny group Admins, Developers to manage buckets in compartment Apps
+deny group Admins, Developers to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to manage buckets in compartment Root:Apps
+deny group Admins, Developers to manage buckets in tenancy
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny group Admins, Developers to read all-resources in compartment Apps
+deny group Admins, Developers to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to read all-resources in compartment Root:Apps
+deny group Admins, Developers to read all-resources in tenancy
+deny group Admins, Developers to read buckets in compartment Apps
+deny group Admins, Developers to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to read buckets in compartment Root:Apps
+deny group Admins, Developers to read buckets in tenancy
+deny group Admins, Developers to use all-resources in compartment Apps
+deny group Admins, Developers to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to use all-resources in compartment Root:Apps
+deny group Admins, Developers to use all-resources in tenancy
+deny group Admins, Developers to use buckets in compartment Apps
+deny group Admins, Developers to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny group Admins, Developers to use buckets in compartment Root:Apps
+deny group Admins, Developers to use buckets in tenancy
+deny service faas to inspect all-resources in compartment Apps
+deny service faas to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to inspect all-resources in compartment Root:Apps
+deny service faas to inspect all-resources in tenancy
+deny service faas to inspect buckets in compartment Apps
+deny service faas to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to inspect buckets in compartment Root:Apps
+deny service faas to inspect buckets in tenancy
+deny service faas to manage all-resources in compartment Apps
+deny service faas to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to manage all-resources in compartment Root:Apps
+deny service faas to manage all-resources in tenancy
+deny service faas to manage buckets in compartment Apps
+deny service faas to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to manage buckets in compartment Root:Apps
+deny service faas to manage buckets in tenancy
+deny service faas to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny service faas to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny service faas to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny service faas to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny service faas to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny service faas to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny service faas to read all-resources in compartment Apps
+deny service faas to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to read all-resources in compartment Root:Apps
+deny service faas to read all-resources in tenancy
+deny service faas to read buckets in compartment Apps
+deny service faas to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to read buckets in compartment Root:Apps
+deny service faas to read buckets in tenancy
+deny service faas to use all-resources in compartment Apps
+deny service faas to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to use all-resources in compartment Root:Apps
+deny service faas to use all-resources in tenancy
+deny service faas to use buckets in compartment Apps
+deny service faas to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny service faas to use buckets in compartment Root:Apps
+deny service faas to use buckets in tenancy
+deny admit any-group of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit any-group of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit any-group of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit any-group of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit any-group of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit any-group of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit any-group of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit any-group of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to manage buckets in tenancy
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit any-group of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit any-group of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to read all-resources in tenancy
+deny admit any-group of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit any-group of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to read buckets in tenancy
+deny admit any-group of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit any-group of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to use all-resources in tenancy
+deny admit any-group of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit any-group of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-group of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit any-group of tenancy SrcTenancy to use buckets in tenancy
+deny admit any-user of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit any-user of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit any-user of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit any-user of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit any-user of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit any-user of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit any-user of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit any-user of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to manage buckets in tenancy
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit any-user of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit any-user of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to read all-resources in tenancy
+deny admit any-user of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit any-user of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to read buckets in tenancy
+deny admit any-user of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit any-user of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to use all-resources in tenancy
+deny admit any-user of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit any-user of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit any-user of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit any-user of tenancy SrcTenancy to use buckets in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to manage buckets in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read all-resources in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to read buckets in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use all-resources in tenancy
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit dynamic-group id ocid1.dynamicgroup.oc1..aaaa of tenancy SrcTenancy to use buckets in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to manage buckets in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to read all-resources in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to read buckets in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to use all-resources in tenancy
+deny admit dynamic-group DGs of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit dynamic-group DGs of tenancy SrcTenancy to use buckets in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to manage buckets in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read all-resources in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to read buckets in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use all-resources in tenancy
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit dynamic-group DGs, DGs2 of tenancy SrcTenancy to use buckets in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to manage buckets in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read all-resources in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use all-resources in tenancy
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to use buckets in tenancy
+deny admit group Admins of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit group Admins of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit group Admins of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit group Admins of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to manage buckets in tenancy
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit group Admins of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to read all-resources in tenancy
+deny admit group Admins of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to read buckets in tenancy
+deny admit group Admins of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to use all-resources in tenancy
+deny admit group Admins of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit group Admins of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit group Admins of tenancy SrcTenancy to use buckets in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to manage buckets in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to read all-resources in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to read buckets in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to use all-resources in tenancy
+deny admit group Admins, Developers of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit group Admins, Developers of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit group Admins, Developers of tenancy SrcTenancy to use buckets in tenancy
+deny admit service faas of tenancy SrcTenancy to inspect all-resources in compartment Apps
+deny admit service faas of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to inspect all-resources in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to inspect all-resources in tenancy
+deny admit service faas of tenancy SrcTenancy to inspect buckets in compartment Apps
+deny admit service faas of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to inspect buckets in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to inspect buckets in tenancy
+deny admit service faas of tenancy SrcTenancy to manage all-resources in compartment Apps
+deny admit service faas of tenancy SrcTenancy to manage all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to manage all-resources in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to manage all-resources in tenancy
+deny admit service faas of tenancy SrcTenancy to manage buckets in compartment Apps
+deny admit service faas of tenancy SrcTenancy to manage buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to manage buckets in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to manage buckets in tenancy
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Apps
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in tenancy
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Apps
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} buckets in tenancy
+deny admit service faas of tenancy SrcTenancy to read all-resources in compartment Apps
+deny admit service faas of tenancy SrcTenancy to read all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to read all-resources in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to read all-resources in tenancy
+deny admit service faas of tenancy SrcTenancy to read buckets in compartment Apps
+deny admit service faas of tenancy SrcTenancy to read buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to read buckets in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to read buckets in tenancy
+deny admit service faas of tenancy SrcTenancy to use all-resources in compartment Apps
+deny admit service faas of tenancy SrcTenancy to use all-resources in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to use all-resources in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to use all-resources in tenancy
+deny admit service faas of tenancy SrcTenancy to use buckets in compartment Apps
+deny admit service faas of tenancy SrcTenancy to use buckets in compartment id ocid1.compartment.oc1..aaaa
+deny admit service faas of tenancy SrcTenancy to use buckets in compartment Root:Apps
+deny admit service faas of tenancy SrcTenancy to use buckets in tenancy
+deny endorse any-group to inspect all-resources in any-tenancy
+deny endorse any-group to inspect all-resources in tenancy TargetTenancy
+deny endorse any-group to inspect buckets in any-tenancy
+deny endorse any-group to inspect buckets in tenancy TargetTenancy
+deny endorse any-group to manage all-resources in any-tenancy
+deny endorse any-group to manage all-resources in tenancy TargetTenancy
+deny endorse any-group to manage buckets in any-tenancy
+deny endorse any-group to manage buckets in tenancy TargetTenancy
+deny endorse any-group to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse any-group to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse any-group to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse any-group to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse any-group to read all-resources in any-tenancy
+deny endorse any-group to read all-resources in tenancy TargetTenancy
+deny endorse any-group to read buckets in any-tenancy
+deny endorse any-group to read buckets in tenancy TargetTenancy
+deny endorse any-group to use all-resources in any-tenancy
+deny endorse any-group to use all-resources in tenancy TargetTenancy
+deny endorse any-group to use buckets in any-tenancy
+deny endorse any-group to use buckets in tenancy TargetTenancy
+deny endorse any-user to inspect all-resources in any-tenancy
+deny endorse any-user to inspect all-resources in tenancy TargetTenancy
+deny endorse any-user to inspect buckets in any-tenancy
+deny endorse any-user to inspect buckets in tenancy TargetTenancy
+deny endorse any-user to manage all-resources in any-tenancy
+deny endorse any-user to manage all-resources in tenancy TargetTenancy
+deny endorse any-user to manage buckets in any-tenancy
+deny endorse any-user to manage buckets in tenancy TargetTenancy
+deny endorse any-user to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse any-user to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse any-user to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse any-user to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse any-user to read all-resources in any-tenancy
+deny endorse any-user to read all-resources in tenancy TargetTenancy
+deny endorse any-user to read buckets in any-tenancy
+deny endorse any-user to read buckets in tenancy TargetTenancy
+deny endorse any-user to use all-resources in any-tenancy
+deny endorse any-user to use all-resources in tenancy TargetTenancy
+deny endorse any-user to use buckets in any-tenancy
+deny endorse any-user to use buckets in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in tenancy TargetTenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in any-tenancy
+deny endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs to inspect all-resources in any-tenancy
+deny endorse dynamic-group DGs to inspect all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs to inspect buckets in any-tenancy
+deny endorse dynamic-group DGs to inspect buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs to manage all-resources in any-tenancy
+deny endorse dynamic-group DGs to manage all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs to manage buckets in any-tenancy
+deny endorse dynamic-group DGs to manage buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs to read all-resources in any-tenancy
+deny endorse dynamic-group DGs to read all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs to read buckets in any-tenancy
+deny endorse dynamic-group DGs to read buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs to use all-resources in any-tenancy
+deny endorse dynamic-group DGs to use all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs to use buckets in any-tenancy
+deny endorse dynamic-group DGs to use buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to inspect all-resources in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to inspect all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to inspect buckets in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to inspect buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to manage all-resources in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to manage all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to manage buckets in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to manage buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to read all-resources in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to read all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to read buckets in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to read buckets in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to use all-resources in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to use all-resources in tenancy TargetTenancy
+deny endorse dynamic-group DGs, DGs2 to use buckets in any-tenancy
+deny endorse dynamic-group DGs, DGs2 to use buckets in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to inspect all-resources in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to inspect all-resources in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to inspect buckets in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to inspect buckets in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to manage all-resources in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to manage all-resources in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to manage buckets in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to manage buckets in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to read all-resources in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to read all-resources in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to read buckets in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to read buckets in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to use all-resources in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to use all-resources in tenancy TargetTenancy
+deny endorse group id ocid1.group.oc1..aaaa to use buckets in any-tenancy
+deny endorse group id ocid1.group.oc1..aaaa to use buckets in tenancy TargetTenancy
+deny endorse group Admins to inspect all-resources in any-tenancy
+deny endorse group Admins to inspect all-resources in tenancy TargetTenancy
+deny endorse group Admins to inspect buckets in any-tenancy
+deny endorse group Admins to inspect buckets in tenancy TargetTenancy
+deny endorse group Admins to manage all-resources in any-tenancy
+deny endorse group Admins to manage all-resources in tenancy TargetTenancy
+deny endorse group Admins to manage buckets in any-tenancy
+deny endorse group Admins to manage buckets in tenancy TargetTenancy
+deny endorse group Admins to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse group Admins to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse group Admins to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse group Admins to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse group Admins to read all-resources in any-tenancy
+deny endorse group Admins to read all-resources in tenancy TargetTenancy
+deny endorse group Admins to read buckets in any-tenancy
+deny endorse group Admins to read buckets in tenancy TargetTenancy
+deny endorse group Admins to use all-resources in any-tenancy
+deny endorse group Admins to use all-resources in tenancy TargetTenancy
+deny endorse group Admins to use buckets in any-tenancy
+deny endorse group Admins to use buckets in tenancy TargetTenancy
+deny endorse group Admins, Developers to inspect all-resources in any-tenancy
+deny endorse group Admins, Developers to inspect all-resources in tenancy TargetTenancy
+deny endorse group Admins, Developers to inspect buckets in any-tenancy
+deny endorse group Admins, Developers to inspect buckets in tenancy TargetTenancy
+deny endorse group Admins, Developers to manage all-resources in any-tenancy
+deny endorse group Admins, Developers to manage all-resources in tenancy TargetTenancy
+deny endorse group Admins, Developers to manage buckets in any-tenancy
+deny endorse group Admins, Developers to manage buckets in tenancy TargetTenancy
+deny endorse group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse group Admins, Developers to read all-resources in any-tenancy
+deny endorse group Admins, Developers to read all-resources in tenancy TargetTenancy
+deny endorse group Admins, Developers to read buckets in any-tenancy
+deny endorse group Admins, Developers to read buckets in tenancy TargetTenancy
+deny endorse group Admins, Developers to use all-resources in any-tenancy
+deny endorse group Admins, Developers to use all-resources in tenancy TargetTenancy
+deny endorse group Admins, Developers to use buckets in any-tenancy
+deny endorse group Admins, Developers to use buckets in tenancy TargetTenancy
+deny endorse service faas to inspect all-resources in any-tenancy
+deny endorse service faas to inspect all-resources in tenancy TargetTenancy
+deny endorse service faas to inspect buckets in any-tenancy
+deny endorse service faas to inspect buckets in tenancy TargetTenancy
+deny endorse service faas to manage all-resources in any-tenancy
+deny endorse service faas to manage all-resources in tenancy TargetTenancy
+deny endorse service faas to manage buckets in any-tenancy
+deny endorse service faas to manage buckets in tenancy TargetTenancy
+deny endorse service faas to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+deny endorse service faas to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+deny endorse service faas to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+deny endorse service faas to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+deny endorse service faas to read all-resources in any-tenancy
+deny endorse service faas to read all-resources in tenancy TargetTenancy
+deny endorse service faas to read buckets in any-tenancy
+deny endorse service faas to read buckets in tenancy TargetTenancy
+deny endorse service faas to use all-resources in any-tenancy
+deny endorse service faas to use all-resources in tenancy TargetTenancy
+deny endorse service faas to use buckets in any-tenancy
+deny endorse service faas to use buckets in tenancy TargetTenancy
+endorse any-group to inspect all-resources in any-tenancy
+endorse any-group to inspect all-resources in tenancy TargetTenancy
+endorse any-group to inspect buckets in any-tenancy
+endorse any-group to inspect buckets in tenancy TargetTenancy
+endorse any-group to manage all-resources in any-tenancy
+endorse any-group to manage all-resources in tenancy TargetTenancy
+endorse any-group to manage buckets in any-tenancy
+endorse any-group to manage buckets in tenancy TargetTenancy
+endorse any-group to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse any-group to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse any-group to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse any-group to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse any-group to read all-resources in any-tenancy
+endorse any-group to read all-resources in tenancy TargetTenancy
+endorse any-group to read buckets in any-tenancy
+endorse any-group to read buckets in tenancy TargetTenancy
+endorse any-group to use all-resources in any-tenancy
+endorse any-group to use all-resources in tenancy TargetTenancy
+endorse any-group to use buckets in any-tenancy
+endorse any-group to use buckets in tenancy TargetTenancy
+endorse any-user to inspect all-resources in any-tenancy
+endorse any-user to inspect all-resources in tenancy TargetTenancy
+endorse any-user to inspect buckets in any-tenancy
+endorse any-user to inspect buckets in tenancy TargetTenancy
+endorse any-user to manage all-resources in any-tenancy
+endorse any-user to manage all-resources in tenancy TargetTenancy
+endorse any-user to manage buckets in any-tenancy
+endorse any-user to manage buckets in tenancy TargetTenancy
+endorse any-user to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse any-user to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse any-user to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse any-user to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse any-user to read all-resources in any-tenancy
+endorse any-user to read all-resources in tenancy TargetTenancy
+endorse any-user to read buckets in any-tenancy
+endorse any-user to read buckets in tenancy TargetTenancy
+endorse any-user to use all-resources in any-tenancy
+endorse any-user to use all-resources in tenancy TargetTenancy
+endorse any-user to use buckets in any-tenancy
+endorse any-user to use buckets in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect all-resources in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to inspect buckets in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage all-resources in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to manage buckets in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read all-resources in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to read buckets in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use all-resources in tenancy TargetTenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in any-tenancy
+endorse dynamic-group id ocid1.dynamicgroup.oc1..aaaa to use buckets in tenancy TargetTenancy
+endorse dynamic-group DGs to inspect all-resources in any-tenancy
+endorse dynamic-group DGs to inspect all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs to inspect buckets in any-tenancy
+endorse dynamic-group DGs to inspect buckets in tenancy TargetTenancy
+endorse dynamic-group DGs to manage all-resources in any-tenancy
+endorse dynamic-group DGs to manage all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs to manage buckets in any-tenancy
+endorse dynamic-group DGs to manage buckets in tenancy TargetTenancy
+endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse dynamic-group DGs to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse dynamic-group DGs to read all-resources in any-tenancy
+endorse dynamic-group DGs to read all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs to read buckets in any-tenancy
+endorse dynamic-group DGs to read buckets in tenancy TargetTenancy
+endorse dynamic-group DGs to use all-resources in any-tenancy
+endorse dynamic-group DGs to use all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs to use buckets in any-tenancy
+endorse dynamic-group DGs to use buckets in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to inspect all-resources in any-tenancy
+endorse dynamic-group DGs, DGs2 to inspect all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to inspect buckets in any-tenancy
+endorse dynamic-group DGs, DGs2 to inspect buckets in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to manage all-resources in any-tenancy
+endorse dynamic-group DGs, DGs2 to manage all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to manage buckets in any-tenancy
+endorse dynamic-group DGs, DGs2 to manage buckets in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to read all-resources in any-tenancy
+endorse dynamic-group DGs, DGs2 to read all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to read buckets in any-tenancy
+endorse dynamic-group DGs, DGs2 to read buckets in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to use all-resources in any-tenancy
+endorse dynamic-group DGs, DGs2 to use all-resources in tenancy TargetTenancy
+endorse dynamic-group DGs, DGs2 to use buckets in any-tenancy
+endorse dynamic-group DGs, DGs2 to use buckets in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to inspect all-resources in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to inspect all-resources in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to inspect buckets in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to inspect buckets in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to manage all-resources in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to manage all-resources in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to manage buckets in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to manage buckets in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to read all-resources in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to read all-resources in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to read buckets in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to read buckets in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to use all-resources in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to use all-resources in tenancy TargetTenancy
+endorse group id ocid1.group.oc1..aaaa to use buckets in any-tenancy
+endorse group id ocid1.group.oc1..aaaa to use buckets in tenancy TargetTenancy
+endorse group Admins to inspect all-resources in any-tenancy
+endorse group Admins to inspect all-resources in tenancy TargetTenancy
+endorse group Admins to inspect buckets in any-tenancy
+endorse group Admins to inspect buckets in tenancy TargetTenancy
+endorse group Admins to manage all-resources in any-tenancy
+endorse group Admins to manage all-resources in tenancy TargetTenancy
+endorse group Admins to manage buckets in any-tenancy
+endorse group Admins to manage buckets in tenancy TargetTenancy
+endorse group Admins to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse group Admins to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse group Admins to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse group Admins to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse group Admins to read all-resources in any-tenancy
+endorse group Admins to read all-resources in tenancy TargetTenancy
+endorse group Admins to read buckets in any-tenancy
+endorse group Admins to read buckets in tenancy TargetTenancy
+endorse group Admins to use all-resources in any-tenancy
+endorse group Admins to use all-resources in tenancy TargetTenancy
+endorse group Admins to use buckets in any-tenancy
+endorse group Admins to use buckets in tenancy TargetTenancy
+endorse group Admins, Developers to inspect all-resources in any-tenancy
+endorse group Admins, Developers to inspect all-resources in tenancy TargetTenancy
+endorse group Admins, Developers to inspect buckets in any-tenancy
+endorse group Admins, Developers to inspect buckets in tenancy TargetTenancy
+endorse group Admins, Developers to manage all-resources in any-tenancy
+endorse group Admins, Developers to manage all-resources in tenancy TargetTenancy
+endorse group Admins, Developers to manage buckets in any-tenancy
+endorse group Admins, Developers to manage buckets in tenancy TargetTenancy
+endorse group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse group Admins, Developers to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse group Admins, Developers to read all-resources in any-tenancy
+endorse group Admins, Developers to read all-resources in tenancy TargetTenancy
+endorse group Admins, Developers to read buckets in any-tenancy
+endorse group Admins, Developers to read buckets in tenancy TargetTenancy
+endorse group Admins, Developers to use all-resources in any-tenancy
+endorse group Admins, Developers to use all-resources in tenancy TargetTenancy
+endorse group Admins, Developers to use buckets in any-tenancy
+endorse group Admins, Developers to use buckets in tenancy TargetTenancy
+endorse service faas to inspect all-resources in any-tenancy
+endorse service faas to inspect all-resources in tenancy TargetTenancy
+endorse service faas to inspect buckets in any-tenancy
+endorse service faas to inspect buckets in tenancy TargetTenancy
+endorse service faas to manage all-resources in any-tenancy
+endorse service faas to manage all-resources in tenancy TargetTenancy
+endorse service faas to manage buckets in any-tenancy
+endorse service faas to manage buckets in tenancy TargetTenancy
+endorse service faas to {KEY_READ, KEY_WRITE} all-resources in any-tenancy
+endorse service faas to {KEY_READ, KEY_WRITE} all-resources in tenancy TargetTenancy
+endorse service faas to {KEY_READ, KEY_WRITE} buckets in any-tenancy
+endorse service faas to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy
+endorse service faas to read all-resources in any-tenancy
+endorse service faas to read all-resources in tenancy TargetTenancy
+endorse service faas to read buckets in any-tenancy
+endorse service faas to read buckets in tenancy TargetTenancy
+endorse service faas to use all-resources in any-tenancy
+endorse service faas to use all-resources in tenancy TargetTenancy
+endorse service faas to use buckets in any-tenancy
+endorse service faas to use buckets in tenancy TargetTenancy

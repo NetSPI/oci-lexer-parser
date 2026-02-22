@@ -1,0 +1,1 @@
+define tenancy T as ocid1.tenancy.oc1..aaaa

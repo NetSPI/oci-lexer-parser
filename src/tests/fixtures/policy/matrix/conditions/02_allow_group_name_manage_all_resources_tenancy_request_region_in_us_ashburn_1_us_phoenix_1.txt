@@ -1,0 +1,1 @@
+allow group Admins to manage all-resources in tenancy where request.region in ('us-ashburn-1', 'us-phoenix-1')

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "any-group",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "compartment-path",
+        "values": [
+          "Root",
+          "Apps"
+        ]
+      }
+    }
+  ]
+}

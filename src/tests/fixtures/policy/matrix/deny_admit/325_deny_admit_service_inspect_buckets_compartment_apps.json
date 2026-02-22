@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_admit",
+      "subject": {
+        "type": "service",
+        "values": [
+          {
+            "label": "faas"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "inspect"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "Apps"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "SrcTenancy"
+        ]
+      }
+    }
+  ]
+}

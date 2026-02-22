@@ -1,0 +1,1 @@
+allow group Admins, Developers to read buckets in tenancy

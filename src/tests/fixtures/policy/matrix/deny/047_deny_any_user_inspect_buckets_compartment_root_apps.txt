@@ -1,0 +1,1 @@
+deny any-user to inspect buckets in compartment Root:Apps

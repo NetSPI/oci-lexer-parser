@@ -1,0 +1,1 @@
+endorse service faas to read buckets in any-tenancy

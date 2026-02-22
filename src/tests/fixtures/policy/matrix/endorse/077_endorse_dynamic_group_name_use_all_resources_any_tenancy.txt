@@ -1,0 +1,1 @@
+endorse dynamic-group DGs to use all-resources in any-tenancy

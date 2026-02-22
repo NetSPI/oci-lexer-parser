@@ -1,0 +1,10 @@
+// define an alias we can substitute
+DEFINE TENANCY T AS ocid1.tenancy.oc1..abc
+
+/* allow/deny mix, plus different resources and locations */
+ALLOW group A to use buckets in tenancy
+DENY dynamic-group DG to manage all-resources in compartment 'apps'
+
+# endorse with a specific target alias; parser will keep the alias unless
+# define_subs is used by the caller.
+ENDORSE group Endorsers to associate all-resources in tenancy T

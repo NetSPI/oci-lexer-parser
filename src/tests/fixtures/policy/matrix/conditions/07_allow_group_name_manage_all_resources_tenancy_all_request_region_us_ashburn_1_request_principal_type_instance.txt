@@ -1,0 +1,1 @@
+allow group Admins to manage all-resources in tenancy where all { request.region = 'us-ashburn-1', request.principal.type != 'Instance' }

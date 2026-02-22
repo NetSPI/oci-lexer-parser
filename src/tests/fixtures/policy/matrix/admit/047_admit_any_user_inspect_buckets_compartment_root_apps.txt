@@ -1,0 +1,1 @@
+admit any-user of tenancy SrcTenancy to inspect buckets in compartment Root:Apps

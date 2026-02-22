@@ -1,0 +1,1 @@
+endorse any-group to use all-resources in tenancy TargetTenancy

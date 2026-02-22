@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "conditions": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "request.region",
+              "op": "eq",
+              "rhs": {
+                "type": "literal",
+                "value": "us-ashburn-1"
+              }
+            }
+          },
+          {
+            "type": "group",
+            "mode": "all",
+            "items": [
+              {
+                "type": "clause",
+                "node": {
+                  "lhs": "request.user.name",
+                  "op": "eq",
+                  "rhs": {
+                    "type": "regex",
+                    "value": "/__PSM*/",
+                    "pattern": "__PSM*"
+                  }
+                }
+              },
+              {
+                "type": "clause",
+                "node": {
+                  "lhs": "target.user.name",
+                  "op": "eq",
+                  "rhs": {
+                    "type": "literal",
+                    "value": "user@example.test"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

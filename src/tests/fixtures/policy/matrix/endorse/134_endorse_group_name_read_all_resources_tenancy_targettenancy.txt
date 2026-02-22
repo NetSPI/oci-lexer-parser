@@ -1,0 +1,1 @@
+endorse group Admins to read all-resources in tenancy TargetTenancy

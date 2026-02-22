@@ -1,0 +1,1 @@
+endorse group Admins to use all-resources in any-tenancy

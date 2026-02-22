@@ -1,0 +1,1 @@
+deny admit service faas of tenancy SrcTenancy to use all-resources in tenancy

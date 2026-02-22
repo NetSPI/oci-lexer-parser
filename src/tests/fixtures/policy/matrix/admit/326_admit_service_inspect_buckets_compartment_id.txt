@@ -1,0 +1,1 @@
+admit service faas of tenancy SrcTenancy to inspect buckets in compartment id ocid1.compartment.oc1..aaaa

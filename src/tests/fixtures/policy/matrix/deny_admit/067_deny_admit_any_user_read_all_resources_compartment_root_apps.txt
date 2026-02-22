@@ -1,0 +1,1 @@
+deny admit any-user of tenancy SrcTenancy to read all-resources in compartment Root:Apps

@@ -1,0 +1,1 @@
+deny endorse dynamic-group DGs to manage buckets in tenancy TargetTenancy

@@ -1,0 +1,1 @@
+allow group Admins, Developers to inspect all-resources in tenancy

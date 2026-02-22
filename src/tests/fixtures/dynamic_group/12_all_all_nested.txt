@@ -1,0 +1,4 @@
+ALL {
+  instance.id = 'ocid1.instance.oc1..aaa',
+  ALL { resource.type = 'bucket', resource.type = 'object' }
+}

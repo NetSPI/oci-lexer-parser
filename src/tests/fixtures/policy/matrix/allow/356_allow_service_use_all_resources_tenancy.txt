@@ -1,0 +1,1 @@
+allow service faas to use all-resources in tenancy

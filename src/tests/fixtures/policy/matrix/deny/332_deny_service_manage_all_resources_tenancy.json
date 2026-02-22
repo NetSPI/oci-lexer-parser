@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny",
+      "subject": {
+        "type": "service",
+        "values": [
+          {
+            "label": "faas"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "all-resources",
+        "values": []
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "dynamic-group-id",
+        "values": [
+          {
+            "label": "ocid1.dynamicgroup.oc1..aaaa"
+          }
+        ]
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      }
+    }
+  ]
+}

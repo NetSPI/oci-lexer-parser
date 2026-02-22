@@ -1,0 +1,1 @@
+allow any-user to read all-resources in tenancy

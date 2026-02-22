@@ -1,0 +1,1 @@
+endorse any-group to read all-resources in any-tenancy

@@ -1,0 +1,1 @@
+endorse dynamic-group DGs, DGs2 to inspect buckets in any-tenancy

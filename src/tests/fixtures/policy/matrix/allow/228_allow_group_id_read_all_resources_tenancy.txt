@@ -1,0 +1,1 @@
+allow group id ocid1.group.oc1..aaaa to read all-resources in tenancy

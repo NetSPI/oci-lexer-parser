@@ -1,0 +1,1 @@
+deny endorse group Admins, Developers to manage buckets in any-tenancy

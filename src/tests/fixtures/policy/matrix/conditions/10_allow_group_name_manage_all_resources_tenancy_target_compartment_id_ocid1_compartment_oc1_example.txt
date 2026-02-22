@@ -1,0 +1,1 @@
+allow group Admins to manage all-resources in tenancy where target.compartment.id = 'ocid1.compartment.oc1..example'

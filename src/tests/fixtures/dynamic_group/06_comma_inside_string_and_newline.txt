@@ -1,0 +1,2 @@
+All {instance.compartment.id = 'ocid1.compartment.oc1.phx.oc1.phx.samplecompartmentocid6q6igvfauxmima74jv,',
+ tag.department.operations.value = '45'}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "SrcTenancy"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..src"
+      }
+    },
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "DestTenancy"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..dest"
+      }
+    },
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Migrators"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "source": {
+        "type": "tenancy_id",
+        "values": [
+          "ocid1.tenancy.oc1..src"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsAdministrators"
+          }
+        ]
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-family"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+endorse group id ocid1.group.oc1..aaaa to use all-resources in tenancy TargetTenancy

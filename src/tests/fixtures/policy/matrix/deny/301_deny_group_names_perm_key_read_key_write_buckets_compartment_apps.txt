@@ -1,0 +1,1 @@
+deny group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment Apps

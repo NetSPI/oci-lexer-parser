@@ -1,0 +1,1 @@
+endorse dynamic-group DGs, DGs2 to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "deny_endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "Admins"
+          },
+          {
+            "label": "Developers"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "TargetTenancy"
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      }
+    }
+  ]
+}

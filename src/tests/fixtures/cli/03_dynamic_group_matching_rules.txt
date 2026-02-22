@@ -1,0 +1,11 @@
+# Example dynamic group matching rules
+
+ALL { instance.compartment.id = 'ocid1.compartment.oc1..example', resource.type = 'instance' }
+
+ANY { resource.type = 'instance', resource.type = 'cluster' }
+
+# single-predicate form
+instance.compartment.id = 'ocid1.compartment.oc1..example'
+
+# presence check form
+tag.department.operations.value

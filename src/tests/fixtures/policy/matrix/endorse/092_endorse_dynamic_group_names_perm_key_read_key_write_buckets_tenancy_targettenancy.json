@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "dynamic-group",
+        "values": [
+          {
+            "label": "DGs"
+          },
+          {
+            "label": "DGs2"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "TargetTenancy"
+        ]
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "key_read",
+          "key_write"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      }
+    }
+  ]
+}

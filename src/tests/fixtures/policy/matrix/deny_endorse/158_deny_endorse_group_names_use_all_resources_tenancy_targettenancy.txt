@@ -1,0 +1,1 @@
+deny endorse group Admins, Developers to use all-resources in tenancy TargetTenancy

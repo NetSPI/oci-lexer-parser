@@ -1,0 +1,1 @@
+allow service faas to inspect all-resources in tenancy

@@ -1,0 +1,1 @@
+define dynamic-group DG as ocid1.dynamicgroup.oc1..aaaa

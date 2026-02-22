@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "level": 1,
+      "expr": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "instance.compartment.id",
+              "op": "eq",
+              "rhs": {
+                "type": "literal",
+                "value": "ocid1.compartment.oc1.phx:aaa"
+              }
+            }
+          },
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "instance.compartment.id",
+              "op": "eq",
+              "rhs": {
+                "type": "ocid",
+                "value": "ocid1.compartment.oc1.phx.bbb"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 1,
+      "expr": {
+        "type": "group",
+        "mode": "all",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "instance.compartment.id",
+              "op": "eq",
+              "rhs": {
+                "type": "ocid",
+                "value": "ocid1.compartment.oc1..example"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "level": 1,
+      "expr": {
+        "type": "group",
+        "mode": "all",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "tag.department.operations.value",
+              "op": "exists"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

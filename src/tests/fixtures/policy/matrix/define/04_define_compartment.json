@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "compartment",
+        "name": "C"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.compartment.oc1..aaaa"
+      }
+    }
+  ]
+}

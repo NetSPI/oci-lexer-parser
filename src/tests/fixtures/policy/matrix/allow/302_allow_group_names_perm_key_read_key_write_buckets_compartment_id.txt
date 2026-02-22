@@ -1,0 +1,1 @@
+allow group Admins, Developers to {KEY_READ, KEY_WRITE} buckets in compartment id ocid1.compartment.oc1..aaaa

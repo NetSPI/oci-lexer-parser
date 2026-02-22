@@ -1,0 +1,1 @@
+admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to {KEY_READ, KEY_WRITE} all-resources in compartment Root:Apps

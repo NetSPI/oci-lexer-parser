@@ -1,0 +1,1 @@
+endorse any-user to read all-resources in any-tenancy

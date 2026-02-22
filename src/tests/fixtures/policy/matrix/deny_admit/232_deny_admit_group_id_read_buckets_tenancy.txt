@@ -1,0 +1,1 @@
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to read buckets in tenancy

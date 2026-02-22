@@ -1,0 +1,1 @@
+allow group Admins, Developers to inspect buckets in compartment Root:Apps

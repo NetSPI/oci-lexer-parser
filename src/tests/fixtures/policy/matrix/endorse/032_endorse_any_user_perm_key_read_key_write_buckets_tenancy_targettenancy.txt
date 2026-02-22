@@ -1,0 +1,1 @@
+endorse any-user to {KEY_READ, KEY_WRITE} buckets in tenancy TargetTenancy

@@ -1,0 +1,1 @@
+deny admit group id ocid1.group.oc1..aaaa of tenancy SrcTenancy to inspect all-resources in compartment id ocid1.compartment.oc1..aaaa

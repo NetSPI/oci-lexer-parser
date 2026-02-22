@@ -1,0 +1,1 @@
+deny endorse any-user to {KEY_READ, KEY_WRITE} all-resources in any-tenancy

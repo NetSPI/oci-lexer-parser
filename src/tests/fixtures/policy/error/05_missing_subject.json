@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "unknown",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "buckets"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      }
+    }
+  ],
+  "diagnostics": {
+    "errors": [
+      {
+        "line": 1,
+        "column": 6,
+        "message": "mismatched input 'to' expecting {GROUP, DYNAMIC_GROUP, ANY_GROUP, ANY_USER, SERVICE}",
+        "offending": "to",
+        "expected": null,
+        "statement_index": 1,
+        "line_text": "allow to read buckets in tenancy",
+        "caret": "      ^"
+      }
+    ],
+    "error_count": 1
+  }
+}

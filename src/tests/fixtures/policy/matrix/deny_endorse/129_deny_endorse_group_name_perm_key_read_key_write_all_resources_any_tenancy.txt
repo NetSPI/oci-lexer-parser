@@ -1,0 +1,1 @@
+deny endorse group Admins to {KEY_READ, KEY_WRITE} all-resources in any-tenancy

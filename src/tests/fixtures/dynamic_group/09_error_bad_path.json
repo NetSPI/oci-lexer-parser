@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "rules": [
+    {
+      "level": 1,
+      "expr": {
+        "type": "group",
+        "mode": "all",
+        "items": []
+      }
+    }
+  ],
+  "diagnostics": {
+    "errors": [
+      {
+        "line": 1,
+        "column": 15,
+        "message": "no viable alternative at input 'ALL{instance..'",
+        "offending": ".",
+        "expected": null,
+        "line_text": "ALL { instance..id = 'ocid1.compartment.oc1..example' }",
+        "caret": "               ^",
+        "rule_index": null
+      }
+    ],
+    "error_count": 1
+  }
+}

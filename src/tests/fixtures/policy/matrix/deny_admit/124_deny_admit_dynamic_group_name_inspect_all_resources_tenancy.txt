@@ -1,0 +1,1 @@
+deny admit dynamic-group DGs of tenancy SrcTenancy to inspect all-resources in tenancy

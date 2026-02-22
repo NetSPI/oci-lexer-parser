@@ -1,0 +1,7 @@
+ALLOW SERVICE example-lifecycle-service to {IAM_WORKREQUEST_READ, IAM_WORKREQUEST_INSPECT} IN TENANCY
+ALLOW SERVICE example-lifecycle-service to {POLICY_DELETE} IN TENANCY where target.policy.name='ExampleProvisioning'
+Allow service objectstorage-example-1 to manage object-family in tenancy
+allow any-user to manage all-resources in compartment example-compartment where request.user.name = /__EXAMPLE__*/
+Allow group 'ExampleDomain'/'TeamAdmins' to use cloud-shell in tenancy
+Allow group id ocid1.group.oc1..examplegroup1, id ocid1.group.oc1..examplegroup2 to manage all-resources in compartment Projects-Example
+allow group TeamA to manage instance-family in compartment Project-X:Project-Y

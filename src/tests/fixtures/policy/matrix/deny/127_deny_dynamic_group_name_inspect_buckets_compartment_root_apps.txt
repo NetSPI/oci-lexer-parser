@@ -1,0 +1,1 @@
+deny dynamic-group DGs to inspect buckets in compartment Root:Apps

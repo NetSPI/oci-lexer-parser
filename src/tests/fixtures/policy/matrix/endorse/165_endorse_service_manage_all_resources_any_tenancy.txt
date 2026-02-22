@@ -1,0 +1,1 @@
+endorse service faas to manage all-resources in any-tenancy

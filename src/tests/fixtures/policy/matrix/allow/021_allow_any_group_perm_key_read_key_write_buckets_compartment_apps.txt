@@ -1,0 +1,1 @@
+allow any-group to {KEY_READ, KEY_WRITE} buckets in compartment Apps

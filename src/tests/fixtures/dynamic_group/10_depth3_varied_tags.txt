@@ -1,0 +1,10 @@
+ANY {
+  tag.team.env.value = 'prod',
+  ALL {
+    tag.finance.costcenter.value != '1234',
+    ANY {
+      tag.app.tier.value = 'backend',
+      instance.compartment.id = 'ocid1.compartment.oc1..aaaa'
+    }
+  }
+}
