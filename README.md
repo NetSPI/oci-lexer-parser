@@ -1,7 +1,7 @@
 # OCI Lexer Parser
 
+[![Wiki](https://img.shields.io/badge/Docs-Wiki-lightblue)](https://github.com/NetSPI/oci-lexer-parser/wiki)
 [![PyPI](https://img.shields.io/pypi/v/oci-lexer-parser.svg)](https://pypi.org/project/oci-lexer-parser/)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/oci-lexer-parser.svg)](https://pypi.org/project/oci-lexer-parser/)
 [![Unit Tests](https://github.com/NetSPI/oci-lexer-parser/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/NetSPI/oci-lexer-parser/actions/workflows/unit-tests.yml)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/NetSPI/oci-lexer-parser/blob/main/LICENSE.md)
 [![Issues](https://img.shields.io/github/issues/NetSPI/oci-lexer-parser.svg)](https://github.com/NetSPI/oci-lexer-parser/issues)
@@ -14,9 +14,9 @@
 > 
 > In the spirit of full transparency, the development of the script was done with the help of LLM coding assistants. The assistant did most of the heavy lifting. As with any open-source tool, make sure that you review the  code to understand what its doing before you run it. That said, we've reviewed the code for any potential issues and welcome any changes via PR requests. See `Contributing.md` at the repo root.
 
-OCI Lexer Parser converts human-readable OCI IAM statements and dynamic group rules into normalized JSON for analysis, testing, or transformation. It is built with built with ANTLR4 and Python.
+OCI Lexer Parser converts human-readable OCI IAM statements and dynamic group rules into normalized JSON for analysis, testing, or transformation. It is built with built with ANTLR4 and Python. See Credits below for the original groundwork in the area by Gordon Trevorrow.
 
-See Credits below for the original groundwork in the area by Gordon Trevorrow.
+For additional information regarding the JSON schema and different options offered by the SDK, review the corresponding [Github wiki](https://github.com/NetSPI/oci-lexer-parser/wiki):
 
 ---
 
@@ -33,6 +33,12 @@ See Credits below for the original groundwork in the area by Gordon Trevorrow.
 | Diagnostics | `raise`, `report`, or `ignore` error handling |
 | Output normalization | DEFINE substitutions, identity domain enrichment, spans |
 
+Some features offered by the SDK include:
+- Auto-simplification of large complex conditionals in policies or dynamic groups
+- Auto-substitutaiton of values for DEFINE statements
+- Data enrichment by supplying information like tenancy data
+- Different reporting modes depending on your specific use case
+  
 ---
 
 ## Installation
@@ -62,16 +68,6 @@ Verify the CLI:
 ```bash
 oci-lexer-parse --help
 ```
-
----
-
-## Features
-
-Review the corresponding GitHub wiki for all features offered by the SDK (Ref: https://github.com/NetSPI/oci-lexer-parser/wiki). Among these features the code includes:
-- Auto-simplification of large complex conditionals in policies or dynamic groups
-- Auto-substitutaiton of values for DEFINE statements
-- Data enrichment by supplying information like tenancy data
-- Different reporting modes depending on your specific use case
 
 ---
 
@@ -192,14 +188,6 @@ Stream JSON Lines:
 ```bash
 oci-lexer-parse ./policy.txt --jsonl
 ```
-
----
-
-## Docs
-
-For additional information including the JSON schema, the flags supported by the SDK, and contributing details please see the corresponding wiki:
-
-https://github.com/NetSPI/oci-lexer-parser/wiki
 
 ---
 
