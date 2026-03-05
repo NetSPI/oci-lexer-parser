@@ -35,56 +35,6 @@ See Credits below for the original groundwork in the area by Gordon Trevorrow.
 
 ---
 
-## TL;DR Quickstart (SDK)
-
-Parse policy statements:
-```python
-import json
-from oci_lexer_parser import parse_policy_statements
-
-text = "allow group Admins to manage all-resources in tenancy"
-statements = parse_policy_statements(text)["statements"]
-print(json.dumps(statements[0], indent=2))
-# Output:
-# {
-#   "kind": "allow",
-#   "subject": {"type": "group", "values": [{"label": "Admins"}]},
-#   "actions": {"type": "verbs", "values": ["manage"]},
-#   "resources": {"type": "all-resources", "values": []},
-#   "location": {"type": "tenancy", "values": []}
-# }
-```
-
-Parse dynamic group rules:
-```python
-import json
-from oci_lexer_parser import parse_dynamic_group_matching_rules
-
-rules = parse_dynamic_group_matching_rules("ALL { resource.type = 'instance' }")["rules"]
-print(json.dumps(rules[0], indent=2))
-# Output:
-# {
-#   "mode": "ALL",
-#   "level": 1,
-#   "expr": {
-#     "type": "group",
-#     "mode": "all",
-#     "items": [
-#       {
-#         "type": "clause",
-#         "node": {
-#           "lhs": "resource.type",
-#           "op": "eq",
-#           "rhs": {"type": "literal", "value": "instance"}
-#         }
-#       }
-#     ]
-#   }
-# }
-```
-
----
-
 ## Installation
 
 Requires Python 3.10+.
@@ -94,7 +44,7 @@ Requires Python 3.10+.
 pip install oci-lexer-parser
 ```
 
-### Option B: Git clone (recommended for now)
+### Option B: Git clone
 ```bash
 git clone git@github.com:NetSPI/oci-lexer-parser.git
 cd oci-lexer-parser
@@ -112,6 +62,16 @@ Verify the CLI:
 ```bash
 oci-lexer-parse --help
 ```
+
+---
+
+## Features
+
+Review the corresponding GitHub wiki for all features offered by the SDK (Ref: https://github.com/NetSPI/oci-lexer-parser/wiki). Among these features the code includes:
+- Auto-simplification of large complex conditionals in policies or dynamic groups
+- Auto-substitutaiton of values for DEFINE statements
+- Data enrichment by supplying information like tenancy data
+- Different reporting modes depending on your specific use case
 
 ---
 
@@ -214,14 +174,6 @@ Output:
 }
 ```
 
-Notes:
-- If the rule contains mixed nested modes (for example, `ANY { ..., ALL { ... } }`), output preserves structure under `expr`.
-- Same-mode nesting is simplified only when `nested_simplify=True`.
-- `expr` is always present; flat rules simply contain only `clause` items.
-
-Conditions note:
-- Condition RHS values are typed as `literal`, `ocid`, or `regex` (and lists/ranges are composed of those typed values).
-
 ---
 
 ## CLI Examples
@@ -245,17 +197,9 @@ oci-lexer-parse ./policy.txt --jsonl
 
 ## Docs
 
-| Document | Purpose |
-|---|---|
-| `docs/CLI_Usage.md` | CLI flags, output shapes, and examples |
-| `docs/Examples.md` | End-to-end OCI SDK examples with sample output |
-| `docs/sdk/Policy_SDK.md` | Policy SDK usage and diagnostics |
-| `docs/sdk/Dynamic_Group_SDK.md` | Dynamic group SDK usage and diagnostics |
-| `docs/schema/Policy_Schema.md` | Policy statement JSON schema |
-| `docs/schema/Dynamic_Group_Schema.md` | Dynamic group JSON schema |
-| `docs/Roadmap.md` | Expected changes and future improvements |
-| `Contributing.md` | Development workflow and tests |
-| `LICENSE.md` | BSD 3-Clause license text |
+For additional information including the JSON schema, the flags supported by the SDK, and contributing details please see the corresponding wiki:
+
+https://github.com/NetSPI/oci-lexer-parser/wiki
 
 ---
 
@@ -279,4 +223,4 @@ See `Contributing.md`.
 - Built with ANTLR4 and the Python runtime
 - Based on: [Unlocking the Power of ANTLR for Oracle Cloud IAM Policy Automation](https://www.ateam-oracle.com/post/unlocking-the-power-of-antlr-for-oracle-cloud-iam-policy-automation)
 
-Author: Webbin Root
+Author: [WebbinRoot](https://www.linkedin.com/in/webbinroot)
