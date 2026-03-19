@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   build-and-publish:
-    if: github.event_name == 'workflow_dispatch' && github.repository == 'NetSPI/oci-lexer-parser'
+    if: github.event_name == 'workflow_dispatch' && github.repository == 'NetSPI/oci-lexer-parser' && github.actor == 'WebbinRoot'
     runs-on: ubuntu-latest
     environment: ${{ inputs.repository }}
     steps:
