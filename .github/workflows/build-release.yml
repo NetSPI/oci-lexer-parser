@@ -16,13 +16,27 @@ on:
           - "false"
           - "true"
 
+# Least privilege by default; only the job that creates/updates the release
+# and uploads assets opts up to write.
 permissions:
-  contents: write
+  contents: read
 
+concurrency:
+  group: build-release-${{ github.ref_name }}
+  cancel-in-progress: false
+
+# Every job re-asserts the same authorization guard (GitHub Actions has no shared
+# anchors) as defense-in-depth: only WebbinRoot, on NetSPI/oci-lexer-parser, on refs/heads/main.
 jobs:
   build:
-    if: github.event_name == 'workflow_dispatch' && github.repository == 'NetSPI/oci-lexer-parser' && github.actor == 'WebbinRoot'
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.repository == 'NetSPI/oci-lexer-parser' &&
+      github.actor == 'WebbinRoot' &&
+      github.triggering_actor == 'WebbinRoot' &&
+      github.ref == 'refs/heads/main'
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
@@ -42,6 +56,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 1
+          persist-credentials: false
       # v6.2.0
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
@@ -78,20 +93,43 @@ jobs:
           path: dist/${{ matrix.artifact }}
 
   release:
-    if: github.event_name == 'workflow_dispatch' && github.repository == 'NetSPI/oci-lexer-parser' && github.actor == 'WebbinRoot'
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.repository == 'NetSPI/oci-lexer-parser' &&
+      github.actor == 'WebbinRoot' &&
+      github.triggering_actor == 'WebbinRoot' &&
+      github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: build
+    permissions:
+      contents: write
     steps:
       # v8.0.1
       - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
         with:
           path: dist
 
-      - name: Create GitHub release
-        # v2.6.1
-        uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda
-        with:
-          tag_name: ${{ inputs.tag }}
-          name: ${{ inputs.tag }}
-          prerelease: ${{ inputs.prerelease }}
-          files: dist/**/*
+      - name: Create or update GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          RELEASE_PRERELEASE: ${{ inputs.prerelease }}
+          RELEASE_TARGET: ${{ github.sha }}
+        run: |
+          PRERELEASE_FLAG=()
+          if [ "$RELEASE_PRERELEASE" = "true" ]; then
+            PRERELEASE_FLAG+=(--prerelease)
+          fi
+
+          # download-artifact (no `name` filter) lays assets out one directory
+          # per artifact under dist/ (dist/oci-lexer-parse-linux-x64/..., etc) --
+          # one level deep, so a plain dist/*/* glob (no globstar needed) covers it.
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release edit "$RELEASE_TAG" --title "$RELEASE_TAG" "${PRERELEASE_FLAG[@]}"
+          else
+            gh release create "$RELEASE_TAG" --target "$RELEASE_TARGET" --title "$RELEASE_TAG" --generate-notes "${PRERELEASE_FLAG[@]}"
+          fi
+          gh release upload "$RELEASE_TAG" dist/*/* --clobber

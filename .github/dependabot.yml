@@ -1,13 +1,36 @@
 version: 2
 updates:
+  # Python dependencies (the antlr4-python3-runtime runtime pin + the [dev] extra).
+  # Routine minor/patch bumps are BATCHED into one grouped PR to cut review churn;
+  # MAJOR bumps intentionally fall out of the group into their own PR for individual
+  # scrutiny -- a new antlr4-python3-runtime major needs the checked-in generated
+  # parser (grammar/gen/*) regenerated with a matching major of the ANTLR tool.
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+    groups:
+      python-deps:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
 
+  # Pinned GitHub Actions (Dependabot bumps the commit SHA; it does NOT update
+  # the preceding "# vX.Y.Z" comment, so re-check/fix those by hand when merging).
+  # Action updates are low-risk, so batch them all into one PR.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
