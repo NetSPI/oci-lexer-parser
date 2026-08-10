@@ -287,6 +287,15 @@ class PolicyStatementListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by PolicyStatementParser#CondNotIn.
+    def enterCondNotIn(self, ctx:PolicyStatementParser.CondNotInContext):
+        pass
+
+    # Exit a parse tree produced by PolicyStatementParser#CondNotIn.
+    def exitCondNotIn(self, ctx:PolicyStatementParser.CondNotInContext):
+        pass
+
+
     # Enter a parse tree produced by PolicyStatementParser#CondIn.
     def enterCondIn(self, ctx:PolicyStatementParser.CondInContext):
         pass

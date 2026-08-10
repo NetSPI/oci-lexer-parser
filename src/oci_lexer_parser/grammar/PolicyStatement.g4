@@ -99,6 +99,7 @@ conditionGroup
 
 condition
     : WORD (EQ | NEQ) condValue                                  #CondEq
+    | WORD NOT IN LPAREN condValue (COMMA condValue)* RPAREN     #CondNotIn
     | WORD IN LPAREN condValue (COMMA condValue)* RPAREN         #CondIn
     | WORD BEFORE condValue                                      #CondBefore
     | WORD AFTER  condValue                                      #CondAfter
@@ -149,6 +150,7 @@ BEFORE        : B E F O R E ;
 AFTER         : A F T E R ;
 BETWEEN       : B E T W E E N ;
 AND           : A N D ;
+NOT           : N O T ;
 
 COMMA         : ',' ;
 SLASH         : '/' ;

@@ -4,26 +4,10 @@ import re
 from typing import Any
 from antlr4 import ParserRuleContext, Token
 
-_LINE_COMMENTS = re.compile(r"//[^\r\n]*|#[^\r\n]*")
-_BLOCK_C = re.compile(r"/\*.*?\*/", re.DOTALL)
-
 _INVALID_ASCII = re.compile(r"[^\t\r\n\x20-\x7E]")
-_NON_CRLF = re.compile(r"[^\r\n]")
 
 STATEMENT_SCHEMA_VERSION = "1.0"
 DG_SCHEMA_VERSION = "1.0"
-
-
-def strip_comments_preserve_offsets(text: str) -> str:
-    def repl_line(m: re.Match) -> str:
-        return " " * len(m.group(0))
-
-    def repl_block(m: re.Match) -> str:
-        return _NON_CRLF.sub(" ", m.group(0))
-
-    text = _LINE_COMMENTS.sub(repl_line, text)
-    text = _BLOCK_C.sub(repl_block, text)
-    return text
 
 
 def validate_ascii(text: str) -> None:

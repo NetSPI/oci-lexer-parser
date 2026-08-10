@@ -1,0 +1,2 @@
+Allow group test_conditions_group to manage all-resources in tenancy where request.operation not in ('ListBuckets')
+allow group Admins to manage all-resources in tenancy where all { request.operation not in ('ListBuckets', 'GetObject'), request.region = 'us-ashburn-1' }

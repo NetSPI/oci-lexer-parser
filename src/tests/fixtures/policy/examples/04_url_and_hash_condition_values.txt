@@ -1,0 +1,2 @@
+allow group Admins to manage all-resources in tenancy where target.resource.tag = 'https://accounts.google.com'
+allow group Admins to manage all-resources in tenancy where target.resource.tag = 'ticket#1234'

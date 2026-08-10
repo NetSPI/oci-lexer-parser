@@ -1,4 +1,0 @@
-# file intentionally has no statements
-// comment only
-/* block
-   comment */

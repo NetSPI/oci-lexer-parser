@@ -143,24 +143,63 @@ def test_default_tenancy_alias_not_applied_when_location_is_compartment():
     assert loc["values"] == ["Projects"]
 
 
-def test_comments_and_whitespace_do_not_change_parse_tree():
+def test_whitespace_variance_does_not_change_parse_tree():
     base = (
         "allow group A to read all-resources in tenancy\n"
         "allow dynamic-group DG to manage buckets in compartment 'apps'\n"
     )
 
-    with_comments = (
-        "  // leading spaces + a line comment\n"
+    with_extra_whitespace = (
+        "  \n"
         "allow  group   A   to   read   all-resources   in   tenancy   \n"
-        "  # another comment on its own line\n"
+        "  \n"
         "allow dynamic-group DG to manage buckets in compartment 'apps'   \n"
-        "/* trailing block comment */\n"
     )
 
     a = parse_policy(base)
-    b = parse_policy(with_comments)
+    b = parse_policy(with_extra_whitespace)
 
     assert a == b
+
+
+def test_comments_are_not_supported_and_raise_syntax_errors():
+    # Comment syntax (//, #, /* */) is not part of OCI's policy language and this
+    # parser does not special-case it. Leftover comment-like text from a user's
+    # editor must surface as a loud syntax error, never be silently swallowed -
+    # a naive comment stripper here previously corrupted quoted values containing
+    # '//' (e.g. URLs) or '#' by truncating them with zero reported errors.
+    for text in (
+        "// a line comment\nallow group A to read all-resources in tenancy\n",
+        "# a line comment\nallow group A to read all-resources in tenancy\n",
+        "allow group A to read all-resources in tenancy // trailing note\n",
+        "allow group A to read all-resources in tenancy # trailing note\n",
+        "/* a block comment */\nallow group A to read all-resources in tenancy\n",
+    ):
+        try:
+            parse_policy(text)
+        except ValueError:
+            continue
+        raise AssertionError(f"expected a syntax error for: {text!r}")
+
+
+def test_quoted_values_containing_slash_slash_or_hash_are_preserved():
+    # Regression test: the old comment stripper ran on raw text before quoting
+    # was tokenized, so any quoted value containing '//' (e.g. a URL) or '#'
+    # was silently truncated at that point with zero reported errors.
+    cases = {
+        "https://accounts.google.com": (
+            "allow group Admins to manage all-resources in tenancy "
+            "where target.resource.tag = 'https://accounts.google.com'"
+        ),
+        "ticket#1234": (
+            "allow group Admins to manage all-resources in tenancy "
+            "where target.resource.tag = 'ticket#1234'"
+        ),
+    }
+    for expected_value, text in cases.items():
+        out = parse_policy(text, error_mode="raise")
+        node = out[0]["conditions"]["items"][0]["node"]
+        assert node["rhs"]["value"] == expected_value
 
 
 def test_define_subs_changes_only_the_expected_fields():
@@ -262,6 +301,46 @@ def test_nested_conditions_depth3_all_any_mix_preserves_by_default():
     assert conds["items"][1]["items"][1]["mode"] == "all"
 
 
+def test_condition_not_in_single_value():
+    text = (
+        "Allow group test_conditions_group to manage all-resources in tenancy "
+        "where request.operation not in ('ListBuckets')"
+    )
+    out = parse_policy(text, error_mode="raise")
+    node = out[0]["conditions"]["items"][0]["node"]
+
+    assert node["lhs"] == "request.operation"
+    assert node["op"] == "not_in"
+    assert node["rhs"]["type"] == "list"
+    assert [v["value"] for v in node["rhs"]["values"]] == ["ListBuckets"]
+
+
+def test_condition_not_in_multiple_values_within_all_group():
+    text = (
+        "allow group Admins to manage all-resources in tenancy where "
+        "all { request.operation not in ('ListBuckets', 'GetObject'), "
+        "request.region = 'us-ashburn-1' }"
+    )
+    out = parse_policy(text, error_mode="raise")
+    conds = out[0]["conditions"]
+
+    assert conds["type"] == "group"
+    assert conds["mode"] == "all"
+    not_in_node = conds["items"][0]["node"]
+    assert not_in_node["op"] == "not_in"
+    assert [v["value"] for v in not_in_node["rhs"]["values"]] == ["ListBuckets", "GetObject"]
+
+
+def test_condition_not_without_in_is_a_syntax_error():
+    # "not" alone (without "in") is invalid OCI policy syntax - only "not in" is valid.
+    text = (
+        "Allow group test_conditions_group to manage all-resources in tenancy "
+        "where request.operation not ('ListBuckets')"
+    )
+    _, diags = parse_policy_statements(text, error_mode="report")
+    assert diags["error_count"] > 0
+
+
 def test_nested_conditions_depth3_all_any_mix_simplifies_recursively():
     text = (
         "allow group Admins to manage all-resources in tenancy where "
@@ -278,7 +357,12 @@ def test_nested_conditions_depth3_all_any_mix_simplifies_recursively():
     assert all(item["type"] == "clause" for item in conds["items"])
 
 
-def test_statement_index_ignores_comment_keywords():
+def test_statement_index_unaffected_by_a_leading_malformed_line():
+    # There's no comment syntax to ignore anymore (see
+    # test_comments_are_not_supported_and_raise_syntax_errors); a leading '#'
+    # line is just another malformed statement and reports its own error.
+    # This checks that error reporting for a later, well-formed statement
+    # doesn't get shifted or otherwise confused by an earlier broken one.
     text = (
         "# allow group commented out to read all-resources in tenancy\n"
         "allow group A to read all-resources in tenancy\n"
@@ -286,7 +370,6 @@ def test_statement_index_ignores_comment_keywords():
     )
     payload, diags = parse_policy_statements(text, error_mode="report")
     errors = diags.get("errors", [])
-    assert errors
-    # The syntax error should be in the second statement (index 2),
-    # not shifted by the commented keyword.
-    assert errors[0]["statement_index"] == 2
+    assert len(errors) == 2
+    assert errors[1]["statement_index"] == 2
+    assert errors[1]["line"] == 4

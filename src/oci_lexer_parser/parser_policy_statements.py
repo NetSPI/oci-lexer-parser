@@ -19,7 +19,6 @@ from .parser_utils import (
     ctx_span,
     simplify_group_tree,
     span_source,
-    strip_comments_preserve_offsets,
     validate_ascii,
 )
 
@@ -156,10 +155,7 @@ class CollectingErrorListener(ErrorListener):
             acc += len(ln)
             self._line_offsets.append(acc)
 
-        # Use comment-stripped text so statement indices aren't skewed by
-        # keywords inside comments.
-        cleaned = strip_comments_preserve_offsets(source_text)
-        self._stmt_starts: list[int] = [m.start() for m in _STMT_START_RE.finditer(cleaned)]
+        self._stmt_starts: list[int] = [m.start() for m in _STMT_START_RE.finditer(source_text)]
 
     def syntaxError(
         self,
@@ -245,6 +241,14 @@ def _condition_clause(cond: Any) -> dict[str, Any]:
         return {
             "lhs": lhs,
             "op": "in",
+            "rhs": {"type": "list", "values": [_typed_value(v) for v in cond.condValue()]},
+        }
+
+    # x NOT IN (a, b, c)
+    if isinstance(cond, P.CondNotInContext):
+        return {
+            "lhs": lhs,
+            "op": "not_in",
             "rhs": {"type": "list", "values": [_typed_value(v) for v in cond.condValue()]},
         }
 
@@ -863,19 +867,18 @@ def parse_policy_statements(
     # NEW: normalize here
     text = _normalize_text_input(text)
 
-    # 1) Preprocess (preserve positions), then validate ASCII
-    text_clean = strip_comments_preserve_offsets(text)
-    validate_ascii(text_clean)
+    # 1) Validate ASCII
+    validate_ascii(text)
 
     # If nothing remains, succeed with empty payload
-    if text_clean.strip() == "":
+    if text.strip() == "":
         payload = {"schema_version": STATEMENT_SCHEMA_VERSION, "statements": []}
         if error_mode == "report":
             return payload, {"errors": [], "error_count": 0}
         return payload
 
     # 2) ANTLR pipeline
-    input_stream = InputStream(text_clean)
+    input_stream = InputStream(text)
     lexer = PolicyStatementLexer(input_stream)
     tokens = CommonTokenStream(lexer)
     parser = P(tokens)
@@ -914,13 +917,13 @@ def parse_policy_statements(
                     a,
                     include_spans,
                     nested_simplify=nested_simplify,
-                    source_text=text_clean,
+                    source_text=text,
                 )
             )
             continue
         d = st.defineStmt()
         if d:
-            out.append(_define(d, include_spans, source_text=text_clean))
+            out.append(_define(d, include_spans, source_text=text))
             continue
         m = st.admitStmt()
         if m:
@@ -929,7 +932,7 @@ def parse_policy_statements(
                     m,
                     include_spans,
                     nested_simplify=nested_simplify,
-                    source_text=text_clean,
+                    source_text=text,
                 )
             )
             continue
@@ -940,14 +943,14 @@ def parse_policy_statements(
                     e,
                     include_spans,
                     nested_simplify=nested_simplify,
-                    source_text=text_clean,
+                    source_text=text,
                 )
             )
             continue
         node: dict[str, Any] = {"kind": "unknown"}
         if include_spans:
             node["span"] = ctx_span(st)
-            node["source_text"] = span_source(text_clean, node["span"])
+            node["source_text"] = span_source(text, node["span"])
         out.append(node)
 
     # 4) DEFINE subs (if any)

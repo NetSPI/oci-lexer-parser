@@ -18,11 +18,10 @@ from .parser_utils import (
     simplify_group_tree,
     span_source,
     split_rules_by_newline_preserving_groups,
-    strip_comments_preserve_offsets,
     validate_ascii,
 )
 
-# Comment stripping / ASCII validation / spans live in parser_utils.
+# ASCII validation / spans live in parser_utils.
 
 
 # ============================================================
@@ -360,16 +359,15 @@ def parse_dynamic_group_matching_rules(
     else:
         source_text = "" if text is None else str(text)
 
-    text_clean = strip_comments_preserve_offsets(source_text)
-    validate_ascii(text_clean)
+    validate_ascii(source_text)
 
-    if text_clean.strip() == "":
+    if source_text.strip() == "":
         payload = {"schema_version": DG_SCHEMA_VERSION, "rules": []}
         if error_mode == "report":
             return payload, {"errors": [], "error_count": 0}
         return payload
 
-    chunks = split_rules_by_newline_preserving_groups(text_clean)
+    chunks = split_rules_by_newline_preserving_groups(source_text)
 
     out: list[dict[str, Any]] = []
     issues: list[SyntaxIssue] = []
