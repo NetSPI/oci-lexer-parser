@@ -19,8 +19,14 @@ def run_cli(args, input_text=None):
     env["PYTHONPATH"] = (
         f"{SRC_DIR}{os.pathsep}{env['PYTHONPATH']}" if "PYTHONPATH" in env else str(SRC_DIR)
     )
+    # OCI_LEXER_PARSE_BIN points these subprocess-based tests at a compiled
+    # standalone binary (e.g. a PyInstaller build) instead of the dev-mode
+    # "python -m oci_lexer_parser.cli" invocation, so the same test suite can
+    # smoke-test the actual shipped artifact.
+    bin_path = os.environ.get("OCI_LEXER_PARSE_BIN")
+    command = [bin_path, *args] if bin_path else [sys.executable, "-m", "oci_lexer_parser.cli", *args]
     return subprocess.run(
-        [sys.executable, "-m", "oci_lexer_parser.cli", *args],
+        command,
         text=True,
         input=input_text,
         capture_output=True,
