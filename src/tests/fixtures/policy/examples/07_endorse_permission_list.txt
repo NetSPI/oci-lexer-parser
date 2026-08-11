@@ -1,0 +1,3 @@
+Endorse group test_conditions_group {BUCKET_INSPECT} in any-tenancy
+Endorse group test_conditions_group {BUCKET_INSPECT, BUCKET_READ} in any-tenancy where request.region = 'us-ashburn-1'
+Endorse group test_conditions_group to {BUCKET_INSPECT} buckets in any-tenancy

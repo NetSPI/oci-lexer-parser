@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "ResourceTenancy"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..aaaaaaaaresourcetenancyplaceholderxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    },
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "GroupTenancy"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..aaaaaaaagrouptenancyplaceholderxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    },
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "group",
+        "name": "DatabaseToolsAdministrators"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.group.oc1..aaaaaaaadatabasetoolsadminsplaceholderxxxxxxxxxxxxxx"
+      }
+    },
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "group",
+        "name": "DatabaseToolsConnectionUsers"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.group.oc1..aaaaaaaadatabasetoolsconnusersplaceholderxxxxxxxxx"
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsAdministrators"
+          }
+        ]
+      },
+      "target": {
+        "type": "any-tenancy",
+        "values": []
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-family"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsAdministrators"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "ResourceTenancy"
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-family"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsConnectionUsers"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "ResourceTenancy"
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-connections"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsConnectionUsers"
+          }
+        ]
+      },
+      "target": {
+        "type": "tenancy",
+        "values": [
+          "ResourceTenancy"
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "secret-family"
+        ]
+      }
+    },
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsAdministrators"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-family"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "GroupTenancy"
+        ]
+      }
+    },
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsAdministrators"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-family"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "SharedResources"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "GroupTenancy"
+        ]
+      }
+    },
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsConnectionUsers"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "use"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "database-tools-connections"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "SharedResources"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "GroupTenancy"
+        ]
+      }
+    },
+    {
+      "kind": "admit",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "DatabaseToolsConnectionUsers"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "read"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "secret-family"
+        ]
+      },
+      "location": {
+        "type": "compartment_name",
+        "values": [
+          "SharedResources"
+        ]
+      },
+      "source": {
+        "type": "tenancy",
+        "values": [
+          "GroupTenancy"
+        ]
+      }
+    }
+  ]
+}

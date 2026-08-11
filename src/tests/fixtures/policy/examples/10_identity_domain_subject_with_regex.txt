@@ -1,0 +1,1 @@
+Allow group 'identity-domain'/'group' to manage all-resources in tenancy where target.user.name = /somepattern/

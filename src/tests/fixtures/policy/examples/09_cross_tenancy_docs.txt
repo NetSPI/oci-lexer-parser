@@ -1,0 +1,12 @@
+Define tenancy ResourceTenancy as ocid1.tenancy.oc1..aaaaaaaaresourcetenancyplaceholderxxxxxxxxxxxxxxxxxxxxxxxxxx
+Define tenancy GroupTenancy as ocid1.tenancy.oc1..aaaaaaaagrouptenancyplaceholderxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Define group DatabaseToolsAdministrators as ocid1.group.oc1..aaaaaaaadatabasetoolsadminsplaceholderxxxxxxxxxxxxxx
+Define group DatabaseToolsConnectionUsers as ocid1.group.oc1..aaaaaaaadatabasetoolsconnusersplaceholderxxxxxxxxx
+Endorse group DatabaseToolsAdministrators to manage database-tools-family in any-tenancy
+Endorse group DatabaseToolsAdministrators to manage database-tools-family in tenancy ResourceTenancy
+Endorse group DatabaseToolsConnectionUsers to use database-tools-connections in tenancy ResourceTenancy
+Endorse group DatabaseToolsConnectionUsers to read secret-family in tenancy ResourceTenancy
+Admit group DatabaseToolsAdministrators of tenancy GroupTenancy to manage database-tools-family in tenancy
+Admit group DatabaseToolsAdministrators of tenancy GroupTenancy to manage database-tools-family in compartment SharedResources
+Admit group DatabaseToolsConnectionUsers of tenancy GroupTenancy to use database-tools-connections in compartment SharedResources
+Admit group DatabaseToolsConnectionUsers of tenancy GroupTenancy to read secret-family in compartment SharedResources

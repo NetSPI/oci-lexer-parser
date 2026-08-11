@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "test_conditions_group"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "object-family"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "conditions": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "target.resource.tag.Foo.Bar",
+              "op": "not_exists"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "test_conditions_group"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "object-family"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "conditions": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "target.resource.tag.Foo.Bar",
+              "op": "not_exists"
+            }
+          },
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "target.resource.tag.Foo.Bar",
+              "op": "neq",
+              "rhs": {
+                "type": "literal",
+                "value": "baz"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "allow",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "test_conditions_group"
+          }
+        ]
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "object-family"
+        ]
+      },
+      "location": {
+        "type": "tenancy",
+        "values": []
+      },
+      "conditions": {
+        "type": "group",
+        "mode": "any",
+        "items": [
+          {
+            "type": "clause",
+            "node": {
+              "lhs": "target.resource.tag.Foo.Bar",
+              "op": "exists"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

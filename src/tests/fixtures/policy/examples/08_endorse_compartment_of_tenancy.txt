@@ -1,0 +1,5 @@
+Define compartment foo as ocid1.tenancy.oc1..aaaaaaaamc5ogj2fwgdhje6i22hynidgssbmdmptgawzmkmduhaldwbjqaoa
+Define tenancy bar as ocid1.tenancy.oc1..aaaaaaaamc5ogj2fwgdhje6i22hynidgssbmdmptgawzmkmduhaldwbjqaoa
+Endorse group test_conditions_group to manage object-family in compartment foo of tenancy bar
+Endorse group test_conditions_group to manage object-family in compartment Root:Apps of tenancy bar
+Endorse group test_conditions_group {BUCKET_INSPECT} in compartment foo of tenancy bar

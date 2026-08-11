@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,48,277,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,48,329,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,1,0,4,0,50,8,0,11,0,12,0,51,1,
@@ -23,92 +23,113 @@ def serializedATN():
         1,10,5,10,139,8,10,10,10,12,10,142,9,10,1,11,1,11,1,11,3,11,147,
         8,11,1,12,1,12,1,13,1,13,1,14,1,14,1,14,1,14,3,14,157,8,14,1,14,
         1,14,1,15,1,15,1,15,1,15,1,15,1,15,1,15,1,15,3,15,169,8,15,1,16,
-        3,16,172,8,16,1,16,1,16,1,16,1,16,1,16,3,16,179,8,16,1,16,1,16,1,
-        16,3,16,184,8,16,1,16,1,16,1,16,1,16,3,16,190,8,16,1,17,3,17,193,
-        8,17,1,17,1,17,1,17,1,17,1,17,1,17,1,17,1,17,1,17,3,17,204,8,17,
-        1,18,1,18,3,18,208,8,18,1,19,1,19,1,19,3,19,213,8,19,1,20,1,20,3,
-        20,217,8,20,1,21,1,21,1,21,1,21,1,21,5,21,224,8,21,10,21,12,21,227,
-        9,21,1,21,1,21,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,
-        5,22,241,8,22,10,22,12,22,244,9,22,1,22,1,22,1,22,1,22,1,22,1,22,
-        1,22,1,22,5,22,254,8,22,10,22,12,22,257,9,22,1,22,1,22,1,22,1,22,
-        1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,3,22,273,8,22,
-        1,23,1,23,1,23,0,0,24,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,
-        32,34,36,38,40,42,44,46,0,7,1,0,1,2,2,0,27,27,45,45,1,0,45,46,1,
-        0,42,43,1,0,25,26,1,0,40,41,1,0,42,46,297,0,49,1,0,0,0,2,59,1,0,
-        0,0,4,61,1,0,0,0,6,74,1,0,0,0,8,88,1,0,0,0,10,105,1,0,0,0,12,107,
-        1,0,0,0,14,115,1,0,0,0,16,117,1,0,0,0,18,125,1,0,0,0,20,133,1,0,
-        0,0,22,143,1,0,0,0,24,148,1,0,0,0,26,150,1,0,0,0,28,152,1,0,0,0,
-        30,168,1,0,0,0,32,171,1,0,0,0,34,192,1,0,0,0,36,207,1,0,0,0,38,212,
-        1,0,0,0,40,216,1,0,0,0,42,218,1,0,0,0,44,272,1,0,0,0,46,274,1,0,
-        0,0,48,50,3,2,1,0,49,48,1,0,0,0,50,51,1,0,0,0,51,49,1,0,0,0,51,52,
-        1,0,0,0,52,53,1,0,0,0,53,54,5,0,0,1,54,1,1,0,0,0,55,60,3,4,2,0,56,
-        60,3,28,14,0,57,60,3,32,16,0,58,60,3,34,17,0,59,55,1,0,0,0,59,56,
-        1,0,0,0,59,57,1,0,0,0,59,58,1,0,0,0,60,3,1,0,0,0,61,62,3,6,3,0,62,
-        63,3,8,4,0,63,64,5,3,0,0,64,66,3,10,5,0,65,67,3,12,6,0,66,65,1,0,
-        0,0,66,67,1,0,0,0,67,68,1,0,0,0,68,69,5,4,0,0,69,72,3,14,7,0,70,
-        71,5,5,0,0,71,73,3,40,20,0,72,70,1,0,0,0,72,73,1,0,0,0,73,5,1,0,
-        0,0,74,75,7,0,0,0,75,7,1,0,0,0,76,89,5,14,0,0,77,89,5,15,0,0,78,
-        79,5,16,0,0,79,89,3,18,9,0,80,81,5,12,0,0,81,89,3,18,9,0,82,83,5,
-        12,0,0,83,89,3,20,10,0,84,85,5,13,0,0,85,89,3,18,9,0,86,87,5,13,
-        0,0,87,89,3,20,10,0,88,76,1,0,0,0,88,77,1,0,0,0,88,78,1,0,0,0,88,
-        80,1,0,0,0,88,82,1,0,0,0,88,84,1,0,0,0,88,86,1,0,0,0,89,9,1,0,0,
-        0,90,106,5,21,0,0,91,106,5,22,0,0,92,106,5,23,0,0,93,106,5,24,0,
-        0,94,106,5,45,0,0,95,96,5,36,0,0,96,101,5,45,0,0,97,98,5,33,0,0,
-        98,100,5,45,0,0,99,97,1,0,0,0,100,103,1,0,0,0,101,99,1,0,0,0,101,
-        102,1,0,0,0,102,104,1,0,0,0,103,101,1,0,0,0,104,106,5,37,0,0,105,
-        90,1,0,0,0,105,91,1,0,0,0,105,92,1,0,0,0,105,93,1,0,0,0,105,94,1,
-        0,0,0,105,95,1,0,0,0,106,11,1,0,0,0,107,108,7,1,0,0,108,13,1,0,0,
-        0,109,116,5,18,0,0,110,111,5,17,0,0,111,112,5,20,0,0,112,116,3,26,
-        13,0,113,114,5,17,0,0,114,116,3,16,8,0,115,109,1,0,0,0,115,110,1,
-        0,0,0,115,113,1,0,0,0,116,15,1,0,0,0,117,122,3,24,12,0,118,119,5,
-        35,0,0,119,121,3,24,12,0,120,118,1,0,0,0,121,124,1,0,0,0,122,120,
-        1,0,0,0,122,123,1,0,0,0,123,17,1,0,0,0,124,122,1,0,0,0,125,130,3,
-        22,11,0,126,127,5,33,0,0,127,129,3,22,11,0,128,126,1,0,0,0,129,132,
-        1,0,0,0,130,128,1,0,0,0,130,131,1,0,0,0,131,19,1,0,0,0,132,130,1,
-        0,0,0,133,134,5,20,0,0,134,140,3,26,13,0,135,136,5,33,0,0,136,137,
-        5,20,0,0,137,139,3,26,13,0,138,135,1,0,0,0,139,142,1,0,0,0,140,138,
-        1,0,0,0,140,141,1,0,0,0,141,21,1,0,0,0,142,140,1,0,0,0,143,146,3,
-        24,12,0,144,145,5,34,0,0,145,147,3,24,12,0,146,144,1,0,0,0,146,147,
-        1,0,0,0,147,23,1,0,0,0,148,149,7,2,0,0,149,25,1,0,0,0,150,151,7,
-        3,0,0,151,27,1,0,0,0,152,153,5,6,0,0,153,154,3,30,15,0,154,156,5,
-        7,0,0,155,157,5,20,0,0,156,155,1,0,0,0,156,157,1,0,0,0,157,158,1,
-        0,0,0,158,159,3,26,13,0,159,29,1,0,0,0,160,161,5,18,0,0,161,169,
-        3,24,12,0,162,163,5,12,0,0,163,169,3,22,11,0,164,165,5,13,0,0,165,
-        169,3,22,11,0,166,167,5,17,0,0,167,169,3,24,12,0,168,160,1,0,0,0,
-        168,162,1,0,0,0,168,164,1,0,0,0,168,166,1,0,0,0,169,31,1,0,0,0,170,
-        172,5,2,0,0,171,170,1,0,0,0,171,172,1,0,0,0,172,173,1,0,0,0,173,
-        174,5,8,0,0,174,178,3,8,4,0,175,176,5,9,0,0,176,177,5,18,0,0,177,
-        179,3,24,12,0,178,175,1,0,0,0,178,179,1,0,0,0,179,180,1,0,0,0,180,
-        181,5,3,0,0,181,183,3,10,5,0,182,184,3,12,6,0,183,182,1,0,0,0,183,
-        184,1,0,0,0,184,185,1,0,0,0,185,186,5,4,0,0,186,189,3,14,7,0,187,
-        188,5,5,0,0,188,190,3,40,20,0,189,187,1,0,0,0,189,190,1,0,0,0,190,
-        33,1,0,0,0,191,193,5,2,0,0,192,191,1,0,0,0,192,193,1,0,0,0,193,194,
-        1,0,0,0,194,195,5,10,0,0,195,196,3,8,4,0,196,197,5,3,0,0,197,198,
-        3,36,18,0,198,199,3,12,6,0,199,200,5,4,0,0,200,203,3,38,19,0,201,
-        202,5,5,0,0,202,204,3,40,20,0,203,201,1,0,0,0,203,204,1,0,0,0,204,
-        35,1,0,0,0,205,208,3,10,5,0,206,208,5,11,0,0,207,205,1,0,0,0,207,
-        206,1,0,0,0,208,37,1,0,0,0,209,213,5,19,0,0,210,211,5,18,0,0,211,
-        213,3,24,12,0,212,209,1,0,0,0,212,210,1,0,0,0,213,39,1,0,0,0,214,
-        217,3,42,21,0,215,217,3,44,22,0,216,214,1,0,0,0,216,215,1,0,0,0,
-        217,41,1,0,0,0,218,219,7,4,0,0,219,220,5,36,0,0,220,225,3,40,20,
-        0,221,222,5,33,0,0,222,224,3,40,20,0,223,221,1,0,0,0,224,227,1,0,
-        0,0,225,223,1,0,0,0,225,226,1,0,0,0,226,228,1,0,0,0,227,225,1,0,
-        0,0,228,229,5,37,0,0,229,43,1,0,0,0,230,231,5,45,0,0,231,232,7,5,
-        0,0,232,273,3,46,23,0,233,234,5,45,0,0,234,235,5,32,0,0,235,236,
-        5,4,0,0,236,237,5,38,0,0,237,242,3,46,23,0,238,239,5,33,0,0,239,
-        241,3,46,23,0,240,238,1,0,0,0,241,244,1,0,0,0,242,240,1,0,0,0,242,
-        243,1,0,0,0,243,245,1,0,0,0,244,242,1,0,0,0,245,246,5,39,0,0,246,
-        273,1,0,0,0,247,248,5,45,0,0,248,249,5,4,0,0,249,250,5,38,0,0,250,
-        255,3,46,23,0,251,252,5,33,0,0,252,254,3,46,23,0,253,251,1,0,0,0,
-        254,257,1,0,0,0,255,253,1,0,0,0,255,256,1,0,0,0,256,258,1,0,0,0,
-        257,255,1,0,0,0,258,259,5,39,0,0,259,273,1,0,0,0,260,261,5,45,0,
-        0,261,262,5,28,0,0,262,273,3,46,23,0,263,264,5,45,0,0,264,265,5,
-        29,0,0,265,273,3,46,23,0,266,267,5,45,0,0,267,268,5,30,0,0,268,269,
-        3,46,23,0,269,270,5,31,0,0,270,271,3,46,23,0,271,273,1,0,0,0,272,
-        230,1,0,0,0,272,233,1,0,0,0,272,247,1,0,0,0,272,260,1,0,0,0,272,
-        263,1,0,0,0,272,266,1,0,0,0,273,45,1,0,0,0,274,275,7,6,0,0,275,47,
-        1,0,0,0,27,51,59,66,72,88,101,105,115,122,130,140,146,156,168,171,
-        178,183,189,192,203,207,212,216,225,242,255,272
+        3,16,172,8,16,1,16,1,16,1,16,1,16,1,16,1,16,1,16,3,16,181,8,16,1,
+        16,1,16,1,16,1,16,3,16,187,8,16,1,16,3,16,190,8,16,1,16,1,16,1,16,
+        1,16,1,16,3,16,197,8,16,1,16,1,16,1,16,3,16,202,8,16,1,16,1,16,1,
+        16,1,16,3,16,208,8,16,3,16,210,8,16,1,17,3,17,213,8,17,1,17,1,17,
+        1,17,1,17,1,17,1,17,5,17,221,8,17,10,17,12,17,224,9,17,1,17,1,17,
+        1,17,1,17,1,17,3,17,231,8,17,1,17,3,17,234,8,17,1,17,1,17,1,17,1,
+        17,1,17,1,17,1,17,1,17,1,17,3,17,245,8,17,3,17,247,8,17,1,18,1,18,
+        3,18,251,8,18,1,19,1,19,1,19,1,19,1,19,1,19,1,19,1,19,1,19,3,19,
+        262,8,19,1,20,1,20,3,20,266,8,20,1,21,1,21,1,21,1,21,1,21,5,21,273,
+        8,21,10,21,12,21,276,9,21,1,21,1,21,1,22,1,22,1,22,1,22,1,22,1,22,
+        1,22,1,22,1,22,1,22,5,22,290,8,22,10,22,12,22,293,9,22,1,22,1,22,
+        1,22,1,22,1,22,1,22,1,22,1,22,5,22,303,8,22,10,22,12,22,306,9,22,
+        1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,
+        1,22,1,22,1,22,1,22,3,22,325,8,22,1,23,1,23,1,23,0,0,24,0,2,4,6,
+        8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,0,8,1,
+        0,1,2,2,0,27,27,45,45,1,0,45,46,1,0,42,43,1,0,14,15,1,0,25,26,1,
+        0,40,41,1,0,42,46,360,0,49,1,0,0,0,2,59,1,0,0,0,4,61,1,0,0,0,6,74,
+        1,0,0,0,8,88,1,0,0,0,10,105,1,0,0,0,12,107,1,0,0,0,14,115,1,0,0,
+        0,16,117,1,0,0,0,18,125,1,0,0,0,20,133,1,0,0,0,22,143,1,0,0,0,24,
+        148,1,0,0,0,26,150,1,0,0,0,28,152,1,0,0,0,30,168,1,0,0,0,32,209,
+        1,0,0,0,34,246,1,0,0,0,36,250,1,0,0,0,38,261,1,0,0,0,40,265,1,0,
+        0,0,42,267,1,0,0,0,44,324,1,0,0,0,46,326,1,0,0,0,48,50,3,2,1,0,49,
+        48,1,0,0,0,50,51,1,0,0,0,51,49,1,0,0,0,51,52,1,0,0,0,52,53,1,0,0,
+        0,53,54,5,0,0,1,54,1,1,0,0,0,55,60,3,4,2,0,56,60,3,28,14,0,57,60,
+        3,32,16,0,58,60,3,34,17,0,59,55,1,0,0,0,59,56,1,0,0,0,59,57,1,0,
+        0,0,59,58,1,0,0,0,60,3,1,0,0,0,61,62,3,6,3,0,62,63,3,8,4,0,63,64,
+        5,3,0,0,64,66,3,10,5,0,65,67,3,12,6,0,66,65,1,0,0,0,66,67,1,0,0,
+        0,67,68,1,0,0,0,68,69,5,4,0,0,69,72,3,14,7,0,70,71,5,5,0,0,71,73,
+        3,40,20,0,72,70,1,0,0,0,72,73,1,0,0,0,73,5,1,0,0,0,74,75,7,0,0,0,
+        75,7,1,0,0,0,76,89,5,14,0,0,77,89,5,15,0,0,78,79,5,16,0,0,79,89,
+        3,18,9,0,80,81,5,12,0,0,81,89,3,18,9,0,82,83,5,12,0,0,83,89,3,20,
+        10,0,84,85,5,13,0,0,85,89,3,18,9,0,86,87,5,13,0,0,87,89,3,20,10,
+        0,88,76,1,0,0,0,88,77,1,0,0,0,88,78,1,0,0,0,88,80,1,0,0,0,88,82,
+        1,0,0,0,88,84,1,0,0,0,88,86,1,0,0,0,89,9,1,0,0,0,90,106,5,21,0,0,
+        91,106,5,22,0,0,92,106,5,23,0,0,93,106,5,24,0,0,94,106,5,45,0,0,
+        95,96,5,36,0,0,96,101,5,45,0,0,97,98,5,33,0,0,98,100,5,45,0,0,99,
+        97,1,0,0,0,100,103,1,0,0,0,101,99,1,0,0,0,101,102,1,0,0,0,102,104,
+        1,0,0,0,103,101,1,0,0,0,104,106,5,37,0,0,105,90,1,0,0,0,105,91,1,
+        0,0,0,105,92,1,0,0,0,105,93,1,0,0,0,105,94,1,0,0,0,105,95,1,0,0,
+        0,106,11,1,0,0,0,107,108,7,1,0,0,108,13,1,0,0,0,109,116,5,18,0,0,
+        110,111,5,17,0,0,111,112,5,20,0,0,112,116,3,26,13,0,113,114,5,17,
+        0,0,114,116,3,16,8,0,115,109,1,0,0,0,115,110,1,0,0,0,115,113,1,0,
+        0,0,116,15,1,0,0,0,117,122,3,24,12,0,118,119,5,35,0,0,119,121,3,
+        24,12,0,120,118,1,0,0,0,121,124,1,0,0,0,122,120,1,0,0,0,122,123,
+        1,0,0,0,123,17,1,0,0,0,124,122,1,0,0,0,125,130,3,22,11,0,126,127,
+        5,33,0,0,127,129,3,22,11,0,128,126,1,0,0,0,129,132,1,0,0,0,130,128,
+        1,0,0,0,130,131,1,0,0,0,131,19,1,0,0,0,132,130,1,0,0,0,133,134,5,
+        20,0,0,134,140,3,26,13,0,135,136,5,33,0,0,136,137,5,20,0,0,137,139,
+        3,26,13,0,138,135,1,0,0,0,139,142,1,0,0,0,140,138,1,0,0,0,140,141,
+        1,0,0,0,141,21,1,0,0,0,142,140,1,0,0,0,143,146,3,24,12,0,144,145,
+        5,34,0,0,145,147,3,24,12,0,146,144,1,0,0,0,146,147,1,0,0,0,147,23,
+        1,0,0,0,148,149,7,2,0,0,149,25,1,0,0,0,150,151,7,3,0,0,151,27,1,
+        0,0,0,152,153,5,6,0,0,153,154,3,30,15,0,154,156,5,7,0,0,155,157,
+        5,20,0,0,156,155,1,0,0,0,156,157,1,0,0,0,157,158,1,0,0,0,158,159,
+        3,26,13,0,159,29,1,0,0,0,160,161,5,18,0,0,161,169,3,24,12,0,162,
+        163,5,12,0,0,163,169,3,22,11,0,164,165,5,13,0,0,165,169,3,22,11,
+        0,166,167,5,17,0,0,167,169,3,24,12,0,168,160,1,0,0,0,168,162,1,0,
+        0,0,168,164,1,0,0,0,168,166,1,0,0,0,169,31,1,0,0,0,170,172,5,2,0,
+        0,171,170,1,0,0,0,171,172,1,0,0,0,172,173,1,0,0,0,173,174,5,8,0,
+        0,174,175,7,4,0,0,175,176,5,9,0,0,176,177,5,19,0,0,177,178,5,3,0,
+        0,178,180,3,10,5,0,179,181,3,12,6,0,180,179,1,0,0,0,180,181,1,0,
+        0,0,181,182,1,0,0,0,182,183,5,4,0,0,183,186,3,14,7,0,184,185,5,5,
+        0,0,185,187,3,40,20,0,186,184,1,0,0,0,186,187,1,0,0,0,187,210,1,
+        0,0,0,188,190,5,2,0,0,189,188,1,0,0,0,189,190,1,0,0,0,190,191,1,
+        0,0,0,191,192,5,8,0,0,192,196,3,8,4,0,193,194,5,9,0,0,194,195,5,
+        18,0,0,195,197,3,24,12,0,196,193,1,0,0,0,196,197,1,0,0,0,197,198,
+        1,0,0,0,198,199,5,3,0,0,199,201,3,10,5,0,200,202,3,12,6,0,201,200,
+        1,0,0,0,201,202,1,0,0,0,202,203,1,0,0,0,203,204,5,4,0,0,204,207,
+        3,14,7,0,205,206,5,5,0,0,206,208,3,40,20,0,207,205,1,0,0,0,207,208,
+        1,0,0,0,208,210,1,0,0,0,209,171,1,0,0,0,209,189,1,0,0,0,210,33,1,
+        0,0,0,211,213,5,2,0,0,212,211,1,0,0,0,212,213,1,0,0,0,213,214,1,
+        0,0,0,214,215,5,10,0,0,215,216,3,8,4,0,216,217,5,36,0,0,217,222,
+        5,45,0,0,218,219,5,33,0,0,219,221,5,45,0,0,220,218,1,0,0,0,221,224,
+        1,0,0,0,222,220,1,0,0,0,222,223,1,0,0,0,223,225,1,0,0,0,224,222,
+        1,0,0,0,225,226,5,37,0,0,226,227,5,4,0,0,227,230,3,38,19,0,228,229,
+        5,5,0,0,229,231,3,40,20,0,230,228,1,0,0,0,230,231,1,0,0,0,231,247,
+        1,0,0,0,232,234,5,2,0,0,233,232,1,0,0,0,233,234,1,0,0,0,234,235,
+        1,0,0,0,235,236,5,10,0,0,236,237,3,8,4,0,237,238,5,3,0,0,238,239,
+        3,36,18,0,239,240,3,12,6,0,240,241,5,4,0,0,241,244,3,38,19,0,242,
+        243,5,5,0,0,243,245,3,40,20,0,244,242,1,0,0,0,244,245,1,0,0,0,245,
+        247,1,0,0,0,246,212,1,0,0,0,246,233,1,0,0,0,247,35,1,0,0,0,248,251,
+        3,10,5,0,249,251,5,11,0,0,250,248,1,0,0,0,250,249,1,0,0,0,251,37,
+        1,0,0,0,252,262,5,19,0,0,253,254,5,18,0,0,254,262,3,24,12,0,255,
+        256,5,17,0,0,256,257,3,16,8,0,257,258,5,9,0,0,258,259,5,18,0,0,259,
+        260,3,24,12,0,260,262,1,0,0,0,261,252,1,0,0,0,261,253,1,0,0,0,261,
+        255,1,0,0,0,262,39,1,0,0,0,263,266,3,42,21,0,264,266,3,44,22,0,265,
+        263,1,0,0,0,265,264,1,0,0,0,266,41,1,0,0,0,267,268,7,5,0,0,268,269,
+        5,36,0,0,269,274,3,40,20,0,270,271,5,33,0,0,271,273,3,40,20,0,272,
+        270,1,0,0,0,273,276,1,0,0,0,274,272,1,0,0,0,274,275,1,0,0,0,275,
+        277,1,0,0,0,276,274,1,0,0,0,277,278,5,37,0,0,278,43,1,0,0,0,279,
+        280,5,45,0,0,280,281,7,6,0,0,281,325,3,46,23,0,282,283,5,45,0,0,
+        283,284,5,32,0,0,284,285,5,4,0,0,285,286,5,38,0,0,286,291,3,46,23,
+        0,287,288,5,33,0,0,288,290,3,46,23,0,289,287,1,0,0,0,290,293,1,0,
+        0,0,291,289,1,0,0,0,291,292,1,0,0,0,292,294,1,0,0,0,293,291,1,0,
+        0,0,294,295,5,39,0,0,295,325,1,0,0,0,296,297,5,45,0,0,297,298,5,
+        4,0,0,298,299,5,38,0,0,299,304,3,46,23,0,300,301,5,33,0,0,301,303,
+        3,46,23,0,302,300,1,0,0,0,303,306,1,0,0,0,304,302,1,0,0,0,304,305,
+        1,0,0,0,305,307,1,0,0,0,306,304,1,0,0,0,307,308,5,39,0,0,308,325,
+        1,0,0,0,309,310,5,45,0,0,310,311,5,28,0,0,311,325,3,46,23,0,312,
+        313,5,45,0,0,313,314,5,29,0,0,314,325,3,46,23,0,315,316,5,45,0,0,
+        316,317,5,30,0,0,317,318,3,46,23,0,318,319,5,31,0,0,319,320,3,46,
+        23,0,320,325,1,0,0,0,321,322,5,32,0,0,322,325,5,45,0,0,323,325,5,
+        45,0,0,324,279,1,0,0,0,324,282,1,0,0,0,324,296,1,0,0,0,324,309,1,
+        0,0,0,324,312,1,0,0,0,324,315,1,0,0,0,324,321,1,0,0,0,324,323,1,
+        0,0,0,325,45,1,0,0,0,326,327,7,7,0,0,327,47,1,0,0,0,35,51,59,66,
+        72,88,101,105,115,122,130,140,146,156,168,171,180,186,189,196,201,
+        207,209,212,222,230,233,244,246,250,261,265,274,291,304,324
     ]
 
 class PolicyStatementParser ( Parser ):
@@ -1579,62 +1600,108 @@ class PolicyStatementParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ADMIT(self):
-            return self.getToken(PolicyStatementParser.ADMIT, 0)
-
-        def subject(self):
-            return self.getTypedRuleContext(PolicyStatementParser.SubjectContext,0)
-
-
-        def TO(self):
-            return self.getToken(PolicyStatementParser.TO, 0)
-
-        def verb(self):
-            return self.getTypedRuleContext(PolicyStatementParser.VerbContext,0)
-
-
-        def IN(self):
-            return self.getToken(PolicyStatementParser.IN, 0)
-
-        def location(self):
-            return self.getTypedRuleContext(PolicyStatementParser.LocationContext,0)
-
-
-        def DENY(self):
-            return self.getToken(PolicyStatementParser.DENY, 0)
-
-        def OF(self):
-            return self.getToken(PolicyStatementParser.OF, 0)
-
-        def TENANCY(self):
-            return self.getToken(PolicyStatementParser.TENANCY, 0)
-
-        def name(self):
-            return self.getTypedRuleContext(PolicyStatementParser.NameContext,0)
-
-
-        def resource(self):
-            return self.getTypedRuleContext(PolicyStatementParser.ResourceContext,0)
-
-
-        def WHERE(self):
-            return self.getToken(PolicyStatementParser.WHERE, 0)
-
-        def conditionExpr(self):
-            return self.getTypedRuleContext(PolicyStatementParser.ConditionExprContext,0)
-
 
         def getRuleIndex(self):
             return PolicyStatementParser.RULE_admitStmt
 
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+
+    class AdmitWildcardOfAnyTenancyContext(AdmitStmtContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PolicyStatementParser.AdmitStmtContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def ADMIT(self):
+            return self.getToken(PolicyStatementParser.ADMIT, 0)
+        def OF(self):
+            return self.getToken(PolicyStatementParser.OF, 0)
+        def ANY_TENANCY(self):
+            return self.getToken(PolicyStatementParser.ANY_TENANCY, 0)
+        def TO(self):
+            return self.getToken(PolicyStatementParser.TO, 0)
+        def verb(self):
+            return self.getTypedRuleContext(PolicyStatementParser.VerbContext,0)
+
+        def IN(self):
+            return self.getToken(PolicyStatementParser.IN, 0)
+        def location(self):
+            return self.getTypedRuleContext(PolicyStatementParser.LocationContext,0)
+
+        def ANY_USER(self):
+            return self.getToken(PolicyStatementParser.ANY_USER, 0)
+        def ANY_GROUP(self):
+            return self.getToken(PolicyStatementParser.ANY_GROUP, 0)
+        def DENY(self):
+            return self.getToken(PolicyStatementParser.DENY, 0)
+        def resource(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ResourceContext,0)
+
+        def WHERE(self):
+            return self.getToken(PolicyStatementParser.WHERE, 0)
+        def conditionExpr(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ConditionExprContext,0)
+
+
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterAdmitStmt" ):
-                listener.enterAdmitStmt(self)
+            if hasattr( listener, "enterAdmitWildcardOfAnyTenancy" ):
+                listener.enterAdmitWildcardOfAnyTenancy(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitAdmitStmt" ):
-                listener.exitAdmitStmt(self)
+            if hasattr( listener, "exitAdmitWildcardOfAnyTenancy" ):
+                listener.exitAdmitWildcardOfAnyTenancy(self)
 
+
+    class AdmitGeneralContext(AdmitStmtContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PolicyStatementParser.AdmitStmtContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def ADMIT(self):
+            return self.getToken(PolicyStatementParser.ADMIT, 0)
+        def subject(self):
+            return self.getTypedRuleContext(PolicyStatementParser.SubjectContext,0)
+
+        def TO(self):
+            return self.getToken(PolicyStatementParser.TO, 0)
+        def verb(self):
+            return self.getTypedRuleContext(PolicyStatementParser.VerbContext,0)
+
+        def IN(self):
+            return self.getToken(PolicyStatementParser.IN, 0)
+        def location(self):
+            return self.getTypedRuleContext(PolicyStatementParser.LocationContext,0)
+
+        def DENY(self):
+            return self.getToken(PolicyStatementParser.DENY, 0)
+        def OF(self):
+            return self.getToken(PolicyStatementParser.OF, 0)
+        def TENANCY(self):
+            return self.getToken(PolicyStatementParser.TENANCY, 0)
+        def name(self):
+            return self.getTypedRuleContext(PolicyStatementParser.NameContext,0)
+
+        def resource(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ResourceContext,0)
+
+        def WHERE(self):
+            return self.getToken(PolicyStatementParser.WHERE, 0)
+        def conditionExpr(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ConditionExprContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAdmitGeneral" ):
+                listener.enterAdmitGeneral(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAdmitGeneral" ):
+                listener.exitAdmitGeneral(self)
 
 
 
@@ -1644,55 +1711,115 @@ class PolicyStatementParser ( Parser ):
         self.enterRule(localctx, 32, self.RULE_admitStmt)
         self._la = 0 # Token type
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 171
+            self.state = 209
             self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==2:
-                self.state = 170
-                self.match(PolicyStatementParser.DENY)
+            la_ = self._interp.adaptivePredict(self._input,21,self._ctx)
+            if la_ == 1:
+                localctx = PolicyStatementParser.AdmitWildcardOfAnyTenancyContext(self, localctx)
+                self.enterOuterAlt(localctx, 1)
+                self.state = 171
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==2:
+                    self.state = 170
+                    self.match(PolicyStatementParser.DENY)
 
 
-            self.state = 173
-            self.match(PolicyStatementParser.ADMIT)
-            self.state = 174
-            self.subject()
-            self.state = 178
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==9:
+                self.state = 173
+                self.match(PolicyStatementParser.ADMIT)
+                self.state = 174
+                _la = self._input.LA(1)
+                if not(_la==14 or _la==15):
+                    self._errHandler.recoverInline(self)
+                else:
+                    self._errHandler.reportMatch(self)
+                    self.consume()
                 self.state = 175
                 self.match(PolicyStatementParser.OF)
                 self.state = 176
-                self.match(PolicyStatementParser.TENANCY)
+                self.match(PolicyStatementParser.ANY_TENANCY)
                 self.state = 177
-                self.name()
+                self.match(PolicyStatementParser.TO)
+                self.state = 178
+                self.verb()
+                self.state = 180
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==27 or _la==45:
+                    self.state = 179
+                    self.resource()
 
 
-            self.state = 180
-            self.match(PolicyStatementParser.TO)
-            self.state = 181
-            self.verb()
-            self.state = 183
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==27 or _la==45:
                 self.state = 182
-                self.resource()
+                self.match(PolicyStatementParser.IN)
+                self.state = 183
+                self.location()
+                self.state = 186
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==5:
+                    self.state = 184
+                    self.match(PolicyStatementParser.WHERE)
+                    self.state = 185
+                    self.conditionExpr()
 
 
-            self.state = 185
-            self.match(PolicyStatementParser.IN)
-            self.state = 186
-            self.location()
-            self.state = 189
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==5:
-                self.state = 187
-                self.match(PolicyStatementParser.WHERE)
-                self.state = 188
-                self.conditionExpr()
+                pass
+
+            elif la_ == 2:
+                localctx = PolicyStatementParser.AdmitGeneralContext(self, localctx)
+                self.enterOuterAlt(localctx, 2)
+                self.state = 189
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==2:
+                    self.state = 188
+                    self.match(PolicyStatementParser.DENY)
+
+
+                self.state = 191
+                self.match(PolicyStatementParser.ADMIT)
+                self.state = 192
+                self.subject()
+                self.state = 196
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==9:
+                    self.state = 193
+                    self.match(PolicyStatementParser.OF)
+                    self.state = 194
+                    self.match(PolicyStatementParser.TENANCY)
+                    self.state = 195
+                    self.name()
+
+
+                self.state = 198
+                self.match(PolicyStatementParser.TO)
+                self.state = 199
+                self.verb()
+                self.state = 201
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==27 or _la==45:
+                    self.state = 200
+                    self.resource()
+
+
+                self.state = 203
+                self.match(PolicyStatementParser.IN)
+                self.state = 204
+                self.location()
+                self.state = 207
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==5:
+                    self.state = 205
+                    self.match(PolicyStatementParser.WHERE)
+                    self.state = 206
+                    self.conditionExpr()
+
+
+                pass
 
 
         except RecognitionException as re:
@@ -1711,52 +1838,102 @@ class PolicyStatementParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ENDORSE(self):
-            return self.getToken(PolicyStatementParser.ENDORSE, 0)
-
-        def subject(self):
-            return self.getTypedRuleContext(PolicyStatementParser.SubjectContext,0)
-
-
-        def TO(self):
-            return self.getToken(PolicyStatementParser.TO, 0)
-
-        def endorseVerb(self):
-            return self.getTypedRuleContext(PolicyStatementParser.EndorseVerbContext,0)
-
-
-        def resource(self):
-            return self.getTypedRuleContext(PolicyStatementParser.ResourceContext,0)
-
-
-        def IN(self):
-            return self.getToken(PolicyStatementParser.IN, 0)
-
-        def endorseScope(self):
-            return self.getTypedRuleContext(PolicyStatementParser.EndorseScopeContext,0)
-
-
-        def DENY(self):
-            return self.getToken(PolicyStatementParser.DENY, 0)
-
-        def WHERE(self):
-            return self.getToken(PolicyStatementParser.WHERE, 0)
-
-        def conditionExpr(self):
-            return self.getTypedRuleContext(PolicyStatementParser.ConditionExprContext,0)
-
 
         def getRuleIndex(self):
             return PolicyStatementParser.RULE_endorseStmt
 
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+
+    class EndorseGeneralContext(EndorseStmtContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PolicyStatementParser.EndorseStmtContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def ENDORSE(self):
+            return self.getToken(PolicyStatementParser.ENDORSE, 0)
+        def subject(self):
+            return self.getTypedRuleContext(PolicyStatementParser.SubjectContext,0)
+
+        def TO(self):
+            return self.getToken(PolicyStatementParser.TO, 0)
+        def endorseVerb(self):
+            return self.getTypedRuleContext(PolicyStatementParser.EndorseVerbContext,0)
+
+        def resource(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ResourceContext,0)
+
+        def IN(self):
+            return self.getToken(PolicyStatementParser.IN, 0)
+        def endorseScope(self):
+            return self.getTypedRuleContext(PolicyStatementParser.EndorseScopeContext,0)
+
+        def DENY(self):
+            return self.getToken(PolicyStatementParser.DENY, 0)
+        def WHERE(self):
+            return self.getToken(PolicyStatementParser.WHERE, 0)
+        def conditionExpr(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ConditionExprContext,0)
+
+
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterEndorseStmt" ):
-                listener.enterEndorseStmt(self)
+            if hasattr( listener, "enterEndorseGeneral" ):
+                listener.enterEndorseGeneral(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitEndorseStmt" ):
-                listener.exitEndorseStmt(self)
+            if hasattr( listener, "exitEndorseGeneral" ):
+                listener.exitEndorseGeneral(self)
 
+
+    class EndorsePermissionListContext(EndorseStmtContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PolicyStatementParser.EndorseStmtContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def ENDORSE(self):
+            return self.getToken(PolicyStatementParser.ENDORSE, 0)
+        def subject(self):
+            return self.getTypedRuleContext(PolicyStatementParser.SubjectContext,0)
+
+        def LBRACE(self):
+            return self.getToken(PolicyStatementParser.LBRACE, 0)
+        def WORD(self, i:int=None):
+            if i is None:
+                return self.getTokens(PolicyStatementParser.WORD)
+            else:
+                return self.getToken(PolicyStatementParser.WORD, i)
+        def RBRACE(self):
+            return self.getToken(PolicyStatementParser.RBRACE, 0)
+        def IN(self):
+            return self.getToken(PolicyStatementParser.IN, 0)
+        def endorseScope(self):
+            return self.getTypedRuleContext(PolicyStatementParser.EndorseScopeContext,0)
+
+        def DENY(self):
+            return self.getToken(PolicyStatementParser.DENY, 0)
+        def COMMA(self, i:int=None):
+            if i is None:
+                return self.getTokens(PolicyStatementParser.COMMA)
+            else:
+                return self.getToken(PolicyStatementParser.COMMA, i)
+        def WHERE(self):
+            return self.getToken(PolicyStatementParser.WHERE, 0)
+        def conditionExpr(self):
+            return self.getTypedRuleContext(PolicyStatementParser.ConditionExprContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEndorsePermissionList" ):
+                listener.enterEndorsePermissionList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEndorsePermissionList" ):
+                listener.exitEndorsePermissionList(self)
 
 
 
@@ -1766,37 +1943,94 @@ class PolicyStatementParser ( Parser ):
         self.enterRule(localctx, 34, self.RULE_endorseStmt)
         self._la = 0 # Token type
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 192
+            self.state = 246
             self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==2:
-                self.state = 191
-                self.match(PolicyStatementParser.DENY)
+            la_ = self._interp.adaptivePredict(self._input,27,self._ctx)
+            if la_ == 1:
+                localctx = PolicyStatementParser.EndorsePermissionListContext(self, localctx)
+                self.enterOuterAlt(localctx, 1)
+                self.state = 212
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==2:
+                    self.state = 211
+                    self.match(PolicyStatementParser.DENY)
 
 
-            self.state = 194
-            self.match(PolicyStatementParser.ENDORSE)
-            self.state = 195
-            self.subject()
-            self.state = 196
-            self.match(PolicyStatementParser.TO)
-            self.state = 197
-            self.endorseVerb()
-            self.state = 198
-            self.resource()
-            self.state = 199
-            self.match(PolicyStatementParser.IN)
-            self.state = 200
-            self.endorseScope()
-            self.state = 203
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==5:
-                self.state = 201
-                self.match(PolicyStatementParser.WHERE)
-                self.state = 202
-                self.conditionExpr()
+                self.state = 214
+                self.match(PolicyStatementParser.ENDORSE)
+                self.state = 215
+                self.subject()
+                self.state = 216
+                self.match(PolicyStatementParser.LBRACE)
+                self.state = 217
+                self.match(PolicyStatementParser.WORD)
+                self.state = 222
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while _la==33:
+                    self.state = 218
+                    self.match(PolicyStatementParser.COMMA)
+                    self.state = 219
+                    self.match(PolicyStatementParser.WORD)
+                    self.state = 224
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+
+                self.state = 225
+                self.match(PolicyStatementParser.RBRACE)
+                self.state = 226
+                self.match(PolicyStatementParser.IN)
+                self.state = 227
+                self.endorseScope()
+                self.state = 230
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==5:
+                    self.state = 228
+                    self.match(PolicyStatementParser.WHERE)
+                    self.state = 229
+                    self.conditionExpr()
+
+
+                pass
+
+            elif la_ == 2:
+                localctx = PolicyStatementParser.EndorseGeneralContext(self, localctx)
+                self.enterOuterAlt(localctx, 2)
+                self.state = 233
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==2:
+                    self.state = 232
+                    self.match(PolicyStatementParser.DENY)
+
+
+                self.state = 235
+                self.match(PolicyStatementParser.ENDORSE)
+                self.state = 236
+                self.subject()
+                self.state = 237
+                self.match(PolicyStatementParser.TO)
+                self.state = 238
+                self.endorseVerb()
+                self.state = 239
+                self.resource()
+                self.state = 240
+                self.match(PolicyStatementParser.IN)
+                self.state = 241
+                self.endorseScope()
+                self.state = 244
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if _la==5:
+                    self.state = 242
+                    self.match(PolicyStatementParser.WHERE)
+                    self.state = 243
+                    self.conditionExpr()
+
+
+                pass
 
 
         except RecognitionException as re:
@@ -1841,17 +2075,17 @@ class PolicyStatementParser ( Parser ):
         localctx = PolicyStatementParser.EndorseVerbContext(self, self._ctx, self.state)
         self.enterRule(localctx, 36, self.RULE_endorseVerb)
         try:
-            self.state = 207
+            self.state = 250
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [21, 22, 23, 24, 36, 45]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 205
+                self.state = 248
                 self.verb()
                 pass
             elif token in [11]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 206
+                self.state = 249
                 self.match(PolicyStatementParser.ASSOCIATE)
                 pass
             else:
@@ -1883,6 +2117,16 @@ class PolicyStatementParser ( Parser ):
             return self.getTypedRuleContext(PolicyStatementParser.NameContext,0)
 
 
+        def COMPARTMENT(self):
+            return self.getToken(PolicyStatementParser.COMPARTMENT, 0)
+
+        def compartmentPath(self):
+            return self.getTypedRuleContext(PolicyStatementParser.CompartmentPathContext,0)
+
+
+        def OF(self):
+            return self.getToken(PolicyStatementParser.OF, 0)
+
         def getRuleIndex(self):
             return PolicyStatementParser.RULE_endorseScope
 
@@ -1902,19 +2146,32 @@ class PolicyStatementParser ( Parser ):
         localctx = PolicyStatementParser.EndorseScopeContext(self, self._ctx, self.state)
         self.enterRule(localctx, 38, self.RULE_endorseScope)
         try:
-            self.state = 212
+            self.state = 261
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [19]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 209
+                self.state = 252
                 self.match(PolicyStatementParser.ANY_TENANCY)
                 pass
             elif token in [18]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 210
+                self.state = 253
                 self.match(PolicyStatementParser.TENANCY)
-                self.state = 211
+                self.state = 254
+                self.name()
+                pass
+            elif token in [17]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 255
+                self.match(PolicyStatementParser.COMPARTMENT)
+                self.state = 256
+                self.compartmentPath()
+                self.state = 257
+                self.match(PolicyStatementParser.OF)
+                self.state = 258
+                self.match(PolicyStatementParser.TENANCY)
+                self.state = 259
                 self.name()
                 pass
             else:
@@ -1963,17 +2220,17 @@ class PolicyStatementParser ( Parser ):
         localctx = PolicyStatementParser.ConditionExprContext(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_conditionExpr)
         try:
-            self.state = 216
+            self.state = 265
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [25, 26]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 214
+                self.state = 263
                 self.conditionGroup()
                 pass
-            elif token in [45]:
+            elif token in [32, 45]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 215
+                self.state = 264
                 self.condition()
                 pass
             else:
@@ -2041,30 +2298,30 @@ class PolicyStatementParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 218
+            self.state = 267
             _la = self._input.LA(1)
             if not(_la==25 or _la==26):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
-            self.state = 219
+            self.state = 268
             self.match(PolicyStatementParser.LBRACE)
-            self.state = 220
+            self.state = 269
             self.conditionExpr()
-            self.state = 225
+            self.state = 274
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==33:
-                self.state = 221
+                self.state = 270
                 self.match(PolicyStatementParser.COMMA)
-                self.state = 222
+                self.state = 271
                 self.conditionExpr()
-                self.state = 227
+                self.state = 276
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 228
+            self.state = 277
             self.match(PolicyStatementParser.RBRACE)
         except RecognitionException as re:
             localctx.exception = re
@@ -2090,6 +2347,26 @@ class PolicyStatementParser ( Parser ):
         def copyFrom(self, ctx:ParserRuleContext):
             super().copyFrom(ctx)
 
+
+
+    class CondNotPresentContext(ConditionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PolicyStatementParser.ConditionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def NOT(self):
+            return self.getToken(PolicyStatementParser.NOT, 0)
+        def WORD(self):
+            return self.getToken(PolicyStatementParser.WORD, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCondNotPresent" ):
+                listener.enterCondNotPresent(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCondNotPresent" ):
+                listener.exitCondNotPresent(self)
 
 
     class CondInContext(ConditionContext):
@@ -2176,6 +2453,24 @@ class PolicyStatementParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitCondBetween" ):
                 listener.exitCondBetween(self)
+
+
+    class CondPresentContext(ConditionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a PolicyStatementParser.ConditionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def WORD(self):
+            return self.getToken(PolicyStatementParser.WORD, 0)
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCondPresent" ):
+                listener.enterCondPresent(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCondPresent" ):
+                listener.exitCondPresent(self)
 
 
     class CondEqContext(ConditionContext):
@@ -2270,116 +2565,132 @@ class PolicyStatementParser ( Parser ):
         self.enterRule(localctx, 44, self.RULE_condition)
         self._la = 0 # Token type
         try:
-            self.state = 272
+            self.state = 324
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,26,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,34,self._ctx)
             if la_ == 1:
                 localctx = PolicyStatementParser.CondEqContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 230
+                self.state = 279
                 self.match(PolicyStatementParser.WORD)
-                self.state = 231
+                self.state = 280
                 _la = self._input.LA(1)
                 if not(_la==40 or _la==41):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
                     self.consume()
-                self.state = 232
+                self.state = 281
                 self.condValue()
                 pass
 
             elif la_ == 2:
                 localctx = PolicyStatementParser.CondNotInContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 233
+                self.state = 282
                 self.match(PolicyStatementParser.WORD)
-                self.state = 234
+                self.state = 283
                 self.match(PolicyStatementParser.NOT)
-                self.state = 235
+                self.state = 284
                 self.match(PolicyStatementParser.IN)
-                self.state = 236
+                self.state = 285
                 self.match(PolicyStatementParser.LPAREN)
-                self.state = 237
+                self.state = 286
                 self.condValue()
-                self.state = 242
+                self.state = 291
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==33:
-                    self.state = 238
+                    self.state = 287
                     self.match(PolicyStatementParser.COMMA)
-                    self.state = 239
+                    self.state = 288
                     self.condValue()
-                    self.state = 244
+                    self.state = 293
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
-                self.state = 245
+                self.state = 294
                 self.match(PolicyStatementParser.RPAREN)
                 pass
 
             elif la_ == 3:
                 localctx = PolicyStatementParser.CondInContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
-                self.state = 247
+                self.state = 296
                 self.match(PolicyStatementParser.WORD)
-                self.state = 248
+                self.state = 297
                 self.match(PolicyStatementParser.IN)
-                self.state = 249
+                self.state = 298
                 self.match(PolicyStatementParser.LPAREN)
-                self.state = 250
+                self.state = 299
                 self.condValue()
-                self.state = 255
+                self.state = 304
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==33:
-                    self.state = 251
+                    self.state = 300
                     self.match(PolicyStatementParser.COMMA)
-                    self.state = 252
+                    self.state = 301
                     self.condValue()
-                    self.state = 257
+                    self.state = 306
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
-                self.state = 258
+                self.state = 307
                 self.match(PolicyStatementParser.RPAREN)
                 pass
 
             elif la_ == 4:
                 localctx = PolicyStatementParser.CondBeforeContext(self, localctx)
                 self.enterOuterAlt(localctx, 4)
-                self.state = 260
+                self.state = 309
                 self.match(PolicyStatementParser.WORD)
-                self.state = 261
+                self.state = 310
                 self.match(PolicyStatementParser.BEFORE)
-                self.state = 262
+                self.state = 311
                 self.condValue()
                 pass
 
             elif la_ == 5:
                 localctx = PolicyStatementParser.CondAfterContext(self, localctx)
                 self.enterOuterAlt(localctx, 5)
-                self.state = 263
+                self.state = 312
                 self.match(PolicyStatementParser.WORD)
-                self.state = 264
+                self.state = 313
                 self.match(PolicyStatementParser.AFTER)
-                self.state = 265
+                self.state = 314
                 self.condValue()
                 pass
 
             elif la_ == 6:
                 localctx = PolicyStatementParser.CondBetweenContext(self, localctx)
                 self.enterOuterAlt(localctx, 6)
-                self.state = 266
+                self.state = 315
                 self.match(PolicyStatementParser.WORD)
-                self.state = 267
+                self.state = 316
                 self.match(PolicyStatementParser.BETWEEN)
-                self.state = 268
+                self.state = 317
                 self.condValue()
-                self.state = 269
+                self.state = 318
                 self.match(PolicyStatementParser.AND)
-                self.state = 270
+                self.state = 319
                 self.condValue()
+                pass
+
+            elif la_ == 7:
+                localctx = PolicyStatementParser.CondNotPresentContext(self, localctx)
+                self.enterOuterAlt(localctx, 7)
+                self.state = 321
+                self.match(PolicyStatementParser.NOT)
+                self.state = 322
+                self.match(PolicyStatementParser.WORD)
+                pass
+
+            elif la_ == 8:
+                localctx = PolicyStatementParser.CondPresentContext(self, localctx)
+                self.enterOuterAlt(localctx, 8)
+                self.state = 323
+                self.match(PolicyStatementParser.WORD)
                 pass
 
 
@@ -2435,7 +2746,7 @@ class PolicyStatementParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 274
+            self.state = 326
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 136339441844224) != 0)):
                 self._errHandler.recoverInline(self)

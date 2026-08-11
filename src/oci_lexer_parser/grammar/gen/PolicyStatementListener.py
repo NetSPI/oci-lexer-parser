@@ -224,21 +224,39 @@ class PolicyStatementListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by PolicyStatementParser#admitStmt.
-    def enterAdmitStmt(self, ctx:PolicyStatementParser.AdmitStmtContext):
+    # Enter a parse tree produced by PolicyStatementParser#AdmitWildcardOfAnyTenancy.
+    def enterAdmitWildcardOfAnyTenancy(self, ctx:PolicyStatementParser.AdmitWildcardOfAnyTenancyContext):
         pass
 
-    # Exit a parse tree produced by PolicyStatementParser#admitStmt.
-    def exitAdmitStmt(self, ctx:PolicyStatementParser.AdmitStmtContext):
+    # Exit a parse tree produced by PolicyStatementParser#AdmitWildcardOfAnyTenancy.
+    def exitAdmitWildcardOfAnyTenancy(self, ctx:PolicyStatementParser.AdmitWildcardOfAnyTenancyContext):
         pass
 
 
-    # Enter a parse tree produced by PolicyStatementParser#endorseStmt.
-    def enterEndorseStmt(self, ctx:PolicyStatementParser.EndorseStmtContext):
+    # Enter a parse tree produced by PolicyStatementParser#AdmitGeneral.
+    def enterAdmitGeneral(self, ctx:PolicyStatementParser.AdmitGeneralContext):
         pass
 
-    # Exit a parse tree produced by PolicyStatementParser#endorseStmt.
-    def exitEndorseStmt(self, ctx:PolicyStatementParser.EndorseStmtContext):
+    # Exit a parse tree produced by PolicyStatementParser#AdmitGeneral.
+    def exitAdmitGeneral(self, ctx:PolicyStatementParser.AdmitGeneralContext):
+        pass
+
+
+    # Enter a parse tree produced by PolicyStatementParser#EndorsePermissionList.
+    def enterEndorsePermissionList(self, ctx:PolicyStatementParser.EndorsePermissionListContext):
+        pass
+
+    # Exit a parse tree produced by PolicyStatementParser#EndorsePermissionList.
+    def exitEndorsePermissionList(self, ctx:PolicyStatementParser.EndorsePermissionListContext):
+        pass
+
+
+    # Enter a parse tree produced by PolicyStatementParser#EndorseGeneral.
+    def enterEndorseGeneral(self, ctx:PolicyStatementParser.EndorseGeneralContext):
+        pass
+
+    # Exit a parse tree produced by PolicyStatementParser#EndorseGeneral.
+    def exitEndorseGeneral(self, ctx:PolicyStatementParser.EndorseGeneralContext):
         pass
 
 
@@ -329,6 +347,24 @@ class PolicyStatementListener(ParseTreeListener):
 
     # Exit a parse tree produced by PolicyStatementParser#CondBetween.
     def exitCondBetween(self, ctx:PolicyStatementParser.CondBetweenContext):
+        pass
+
+
+    # Enter a parse tree produced by PolicyStatementParser#CondNotPresent.
+    def enterCondNotPresent(self, ctx:PolicyStatementParser.CondNotPresentContext):
+        pass
+
+    # Exit a parse tree produced by PolicyStatementParser#CondNotPresent.
+    def exitCondNotPresent(self, ctx:PolicyStatementParser.CondNotPresentContext):
+        pass
+
+
+    # Enter a parse tree produced by PolicyStatementParser#CondPresent.
+    def enterCondPresent(self, ctx:PolicyStatementParser.CondPresentContext):
+        pass
+
+    # Exit a parse tree produced by PolicyStatementParser#CondPresent.
+    def exitCondPresent(self, ctx:PolicyStatementParser.CondPresentContext):
         pass
 
 

@@ -162,6 +162,51 @@ def test_whitespace_variance_does_not_change_parse_tree():
     assert a == b
 
 
+def test_admit_of_any_tenancy():
+    text = "Admit any-user of any-tenancy to manage object-family in tenancy"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["subject"]["type"] == "any-user"
+    assert st["source"] == {"type": "any-tenancy", "values": []}
+
+
+def test_admit_of_named_tenancy():
+    text = "Admit any-user of tenancy SourceTenancy to manage object-family in tenancy"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["subject"]["type"] == "any-user"
+    assert st["source"] == {"type": "tenancy", "values": ["SourceTenancy"]}
+
+
+def test_admit_malformed_of_clause_reports_error_instead_of_crashing():
+    # Regression test: ctx.OF() being truthy under error recovery previously
+    # didn't guarantee ctx.name() was populated, causing an unhandled
+    # AttributeError instead of a reported diagnostic.
+    text = "Admit any-user of banana to manage object-family in tenancy"
+    _, diags = parse_policy_statements(text, error_mode="report")
+    assert diags["error_count"] > 0
+
+
+def test_admit_of_any_tenancy_accepts_only_wildcard_subjects():
+    # OCI only accepts the ANY-USER or ANY-GROUP wildcard subjects when the scope
+    # is OF ANY-TENANCY; named group/dynamic-group/service subjects are rejected.
+    # This is enforced at the grammar level (two labeled admitStmt alternatives),
+    # not as a separate semantic check on an otherwise-successful parse.
+    for subject_type in ("any-user", "any-group"):
+        text = f"Admit {subject_type} of any-tenancy to manage object-family in tenancy"
+        stmts = parse_policy(text, error_mode="raise")
+        st = stmts[0]
+        assert st["subject"] == {"type": subject_type, "values": []}
+        assert st["source"] == {"type": "any-tenancy", "values": []}
+
+    for subject in ("group ABC", "dynamic-group DGs", "service faas"):
+        text = f"Admit {subject} of any-tenancy to manage object-family in tenancy"
+        _, diags = parse_policy_statements(text, error_mode="report")
+        assert diags["error_count"] > 0, f"expected a syntax error for: {text!r}"
+
+
 def test_comments_are_not_supported_and_raise_syntax_errors():
     # Comment syntax (//, #, /* */) is not part of OCI's policy language and this
     # parser does not special-case it. Leftover comment-like text from a user's
@@ -329,6 +374,190 @@ def test_condition_not_in_multiple_values_within_all_group():
     not_in_node = conds["items"][0]["node"]
     assert not_in_node["op"] == "not_in"
     assert [v["value"] for v in not_in_node["rhs"]["values"]] == ["ListBuckets", "GetObject"]
+
+
+def test_condition_bare_presence_check():
+    text = (
+        "Allow group test_conditions_group to manage object-family in tenancy "
+        "where any {target.resource.tag.Foo.Bar}"
+    )
+    out = parse_policy(text, error_mode="raise")
+    node = out[0]["conditions"]["items"][0]["node"]
+
+    assert node == {"lhs": "target.resource.tag.Foo.Bar", "op": "exists"}
+    assert "rhs" not in node
+
+
+def test_condition_unary_not_presence_check():
+    text = (
+        "Allow group test_conditions_group to manage object-family in tenancy "
+        "where any {not target.resource.tag.Foo.Bar}"
+    )
+    out = parse_policy(text, error_mode="raise")
+    node = out[0]["conditions"]["items"][0]["node"]
+
+    assert node == {"lhs": "target.resource.tag.Foo.Bar", "op": "not_exists"}
+    assert "rhs" not in node
+
+
+def test_condition_not_presence_combined_with_neq_in_any_group():
+    text = (
+        "Allow group test_conditions_group to manage object-family in tenancy where any "
+        "{ not target.resource.tag.Foo.Bar, target.resource.tag.Foo.Bar != 'baz' }"
+    )
+    out = parse_policy(text, error_mode="raise")
+    conds = out[0]["conditions"]
+
+    assert conds["mode"] == "any"
+    assert conds["items"][0]["node"] == {
+        "lhs": "target.resource.tag.Foo.Bar",
+        "op": "not_exists",
+    }
+    assert conds["items"][1]["node"] == {
+        "lhs": "target.resource.tag.Foo.Bar",
+        "op": "neq",
+        "rhs": {"type": "literal", "value": "baz"},
+    }
+
+
+def test_condition_standalone_presence_checks_without_group_wrapper():
+    present = parse_policy(
+        "allow group A to manage object-family in tenancy where target.resource.tag.Foo.Bar",
+        error_mode="raise",
+    )
+    node = present[0]["conditions"]["items"][0]["node"]
+    assert node == {"lhs": "target.resource.tag.Foo.Bar", "op": "exists"}
+
+    not_present = parse_policy(
+        "allow group A to manage object-family in tenancy where not target.resource.tag.Foo.Bar",
+        error_mode="raise",
+    )
+    node = not_present[0]["conditions"]["items"][0]["node"]
+    assert node == {"lhs": "target.resource.tag.Foo.Bar", "op": "not_exists"}
+
+
+def test_endorse_permission_list_drops_to_and_resource():
+    # Live-validated: ENDORSE ... {PERM, ...} IN ... has no TO and no resource-type,
+    # unlike every other endorseVerb form (named verbs / associate / single-word
+    # permission), which still require "TO <verb> <resource> IN ...".
+    text = "Endorse group test_conditions_group {BUCKET_INSPECT} in any-tenancy"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["subject"] == {"type": "group", "values": [{"label": "test_conditions_group"}]}
+    assert st["target"] == {"type": "any-tenancy", "values": []}
+    assert st["actions"] == {"type": "permissions", "values": ["bucket_inspect"]}
+    assert st["resources"] == {"type": "unknown", "values": []}
+
+
+def test_endorse_permission_list_multiple_values_and_where_clause():
+    text = (
+        "Endorse group test_conditions_group {BUCKET_INSPECT, BUCKET_READ} in any-tenancy "
+        "where request.region = 'us-ashburn-1'"
+    )
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["actions"] == {"type": "permissions", "values": ["bucket_inspect", "bucket_read"]}
+    assert st["conditions"]["items"][0]["node"] == {
+        "lhs": "request.region",
+        "op": "eq",
+        "rhs": {"type": "literal", "value": "us-ashburn-1"},
+    }
+
+
+def test_endorse_general_form_with_to_and_resource_still_works():
+    # Regression: the pre-existing "TO {list} <resource> IN ..." shape must
+    # keep working unchanged alongside the new no-TO/no-resource shorthand.
+    text = "Endorse group test_conditions_group to {BUCKET_INSPECT} buckets in any-tenancy"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["actions"] == {"type": "permissions", "values": ["bucket_inspect"]}
+    assert st["resources"] == {"type": "specific", "values": ["buckets"]}
+
+
+def test_endorse_named_verb_still_requires_to_and_resource():
+    text = "endorse group Endorsers to associate all-resources in tenancy T"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["actions"] == {"type": "verbs", "values": ["associate"]}
+    assert st["resources"] == {"type": "all-resources", "values": []}
+
+
+def test_endorse_scope_compartment_of_tenancy():
+    # Live-validated: ENDORSE ... IN COMPARTMENT <name> OF TENANCY <name> is a
+    # distinct endorseScope form alongside plain ANY-TENANCY / TENANCY <name>.
+    text = "Endorse group test_conditions_group to manage object-family in compartment foo of tenancy bar"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["target"] == {"type": "compartment_name", "values": ["foo"], "tenancy": "bar"}
+    assert st["actions"] == {"type": "verbs", "values": ["manage"]}
+    assert st["resources"] == {"type": "specific", "values": ["object-family"]}
+
+
+def test_endorse_scope_nested_compartment_path_of_tenancy():
+    text = "Endorse group test_conditions_group to manage object-family in compartment Root:Apps of tenancy bar"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["target"] == {
+        "type": "compartment-path",
+        "values": ["Root", "Apps"],
+        "tenancy": "bar",
+    }
+
+
+def test_endorse_scope_compartment_of_tenancy_combined_with_permission_list():
+    # The two ENDORSE fixes compose: the no-TO/no-resource permission-list shorthand
+    # together with a compartment-of-tenancy scope.
+    text = "Endorse group test_conditions_group {BUCKET_INSPECT} in compartment foo of tenancy bar"
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["target"] == {"type": "compartment_name", "values": ["foo"], "tenancy": "bar"}
+    assert st["actions"] == {"type": "permissions", "values": ["bucket_inspect"]}
+    assert st["resources"] == {"type": "unknown", "values": []}
+
+
+def test_identity_domain_subject_does_not_swallow_a_later_regex_pattern():
+    # Regression test: PATTERN previously didn't exclude unescaped single quotes, so
+    # the SLASH in a quoted 'domain'/'group' subject could be mis-lexed as the start
+    # of PATTERN and greedily consume everything up to the *next* real '/' in the
+    # statement - including a genuine /pattern/ condition later in the same line.
+    text = (
+        "Allow group 'identity-domain'/'group' to manage all-resources in tenancy "
+        "where target.user.name = /somepattern/"
+    )
+    stmts = parse_policy(text, error_mode="raise")
+    st = stmts[0]
+
+    assert st["subject"] == {
+        "type": "group",
+        "values": [{"label": "group", "identity_domain": "identity-domain"}],
+    }
+    assert st["conditions"]["items"][0]["node"] == {
+        "lhs": "target.user.name",
+        "op": "eq",
+        "rhs": {"type": "regex", "value": "/somepattern/", "pattern": "somepattern"},
+    }
+
+
+def test_define_with_missing_ocid_reports_error_instead_of_crashing():
+    # Regression test: ctx.ocid() being None under error recovery (DEFINE with
+    # nothing after AS) previously raised an unhandled AttributeError instead
+    # of being caught and reported as a diagnostic.
+    text = "define compartment foo as"
+    _, diags = parse_policy_statements(text, error_mode="report")
+    assert diags["error_count"] > 0
+
+
+def test_define_group_with_missing_name_reports_error_instead_of_crashing():
+    text = "define group as ocid1.group.oc1..aaaa"
+    _, diags = parse_policy_statements(text, error_mode="report")
+    assert diags["error_count"] > 0
 
 
 def test_condition_not_without_in_is_a_syntax_error():

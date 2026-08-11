@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "compartment",
+        "name": "foo"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..aaaaaaaamc5ogj2fwgdhje6i22hynidgssbmdmptgawzmkmduhaldwbjqaoa"
+      }
+    },
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "tenancy",
+        "name": "bar"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "ocid1.tenancy.oc1..aaaaaaaamc5ogj2fwgdhje6i22hynidgssbmdmptgawzmkmduhaldwbjqaoa"
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "test_conditions_group"
+          }
+        ]
+      },
+      "target": {
+        "type": "compartment_name",
+        "values": [
+          "foo"
+        ],
+        "tenancy": "bar"
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "object-family"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "test_conditions_group"
+          }
+        ]
+      },
+      "target": {
+        "type": "compartment-path",
+        "values": [
+          "Root",
+          "Apps"
+        ],
+        "tenancy": "bar"
+      },
+      "actions": {
+        "type": "verbs",
+        "values": [
+          "manage"
+        ]
+      },
+      "resources": {
+        "type": "specific",
+        "values": [
+          "object-family"
+        ]
+      }
+    },
+    {
+      "kind": "endorse",
+      "subject": {
+        "type": "group",
+        "values": [
+          {
+            "label": "test_conditions_group"
+          }
+        ]
+      },
+      "target": {
+        "type": "compartment_name",
+        "values": [
+          "foo"
+        ],
+        "tenancy": "bar"
+      },
+      "actions": {
+        "type": "permissions",
+        "values": [
+          "bucket_inspect"
+        ]
+      },
+      "resources": {
+        "type": "unknown",
+        "values": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Allow group test_conditions_group to manage object-family in tenancy where any {not target.resource.tag.Foo.Bar}
+Allow group test_conditions_group to manage object-family in tenancy where any { not target.resource.tag.Foo.Bar, target.resource.tag.Foo.Bar != 'baz' }
+Allow group test_conditions_group to manage object-family in tenancy where any {target.resource.tag.Foo.Bar}

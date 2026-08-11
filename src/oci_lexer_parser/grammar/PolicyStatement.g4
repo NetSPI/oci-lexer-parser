@@ -66,15 +66,24 @@ defineTarget
 
 // ==================== ADMIT statement ====================
 // Plural subjects allowed; base mode rejects >1.
+// "OF ANY-TENANCY" (admit from any source tenancy) is only valid with the
+// any-user or any-group wildcard subjects - OCI rejects it for named
+// group/dynamic-group/service subjects.
+// "OF TENANCY <name>" has no such restriction and stays on the general subject rule.
 admitStmt
-    : (DENY)? ADMIT subject (OF TENANCY name)? TO verb (resource)? IN location (WHERE conditionExpr)?
+    : (DENY)? ADMIT (ANY_USER | ANY_GROUP) OF ANY_TENANCY TO verb (resource)? IN location (WHERE conditionExpr)? #AdmitWildcardOfAnyTenancy
+    | (DENY)? ADMIT subject (OF TENANCY name)? TO verb (resource)? IN location (WHERE conditionExpr)?            #AdmitGeneral
     ;
 
 // ==================== ENDORSE statement ====================
 // Plural subjects allowed; base mode rejects >1.
 // Support multiple endorse scopes (targets): "IN TENANCY A, TENANCY B, ANY-TENANCY"
+// A specific-permission list ({PERM1, PERM2, ...}) drops both TO and the
+// resource-type entirely - live-validated against OCI (permissions already
+// imply their own resource, so naming a resource-type again is redundant).
 endorseStmt
-    : (DENY)? ENDORSE subject TO endorseVerb resource IN endorseScope (WHERE conditionExpr)?
+    : (DENY)? ENDORSE subject LBRACE WORD (COMMA WORD)* RBRACE IN endorseScope (WHERE conditionExpr)?  #EndorsePermissionList
+    | (DENY)? ENDORSE subject TO endorseVerb resource IN endorseScope (WHERE conditionExpr)?            #EndorseGeneral
     ;
 
 endorseVerb
@@ -85,6 +94,7 @@ endorseVerb
 endorseScope
     : ANY_TENANCY
     | TENANCY name
+    | COMPARTMENT compartmentPath OF TENANCY name
     ;
 
 // ==================== Conditions (incl. time ops) ====================
@@ -104,6 +114,8 @@ condition
     | WORD BEFORE condValue                                      #CondBefore
     | WORD AFTER  condValue                                      #CondAfter
     | WORD BETWEEN condValue AND condValue                       #CondBetween
+    | NOT WORD                                                    #CondNotPresent
+    | WORD                                                        #CondPresent
     ;
 
 condValue
@@ -167,7 +179,10 @@ OCID          : 'ocid1.' ~[ \t\r\n,}]+ ;
 QUOTED_OCID   : '\'' 'ocid1.' ~['\r\n]* '\'' ;
 
 // Support escaped sequences (e.g., '\/', '\n', '\x'), without interpreting them here.
-PATTERN       : '/' ( ESC | ~[/\r\n] )* '/' ;
+// Excludes unescaped single quotes so a PATTERN can't greedily swallow across a QUOTED
+// boundary elsewhere in the statement (e.g. an 'identity-domain'/'group' subject's SLASH
+// being misread as the start of a PATTERN that then eats through to a later regex condition).
+PATTERN       : '/' ( ESC | ~[/'\r\n] )* '/' ;
 
 WORD          : [A-Za-z0-9] [A-Za-z0-9._-]* ;
 QUOTED        : '\'' ( ESC | ~['\\\r\n] )* '\'' ;

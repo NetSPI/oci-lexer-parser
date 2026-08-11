@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "statements": [
+    {
+      "kind": "define",
+      "symbol": {
+        "type": "compartment",
+        "name": "foo"
+      },
+      "def": {
+        "type": "ocid",
+        "value": "?"
+      }
+    }
+  ],
+  "diagnostics": {
+    "errors": [
+      {
+        "line": 2,
+        "column": 0,
+        "message": "mismatched input '<EOF>' expecting {ID, OCID, QUOTED_OCID}",
+        "offending": "<EOF>",
+        "expected": null,
+        "statement_index": 1,
+        "line_text": null,
+        "caret": null
+      }
+    ],
+    "error_count": 1
+  }
+}

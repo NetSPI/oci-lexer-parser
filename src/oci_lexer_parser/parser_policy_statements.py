@@ -81,9 +81,15 @@ def _strip_quotes(s: str) -> str:
 
 
 def _qname(qn_ctx: Any) -> str:
-    left = _strip_quotes(qn_ctx.name(0).getText())
+    # Under error-recovery (error_mode="report"/"ignore"), qn_ctx or its name()
+    # children can legitimately be None even when this accessor is reached.
+    if qn_ctx is None:
+        return "?"
+    left_ctx = qn_ctx.name(0)
+    left = _strip_quotes(left_ctx.getText()) if left_ctx is not None else "?"
     if qn_ctx.SLASH():
-        right = _strip_quotes(qn_ctx.name(1).getText())
+        right_ctx = qn_ctx.name(1)
+        right = _strip_quotes(right_ctx.getText()) if right_ctx is not None else "?"
         return f"{left}/{right}"
     return left
 
@@ -269,6 +275,14 @@ def _condition_clause(cond: Any) -> dict[str, Any]:
             "rhs": {"type": "range", "from": _typed_value(a), "to": _typed_value(b)},
         }
 
+    # NOT x   (unary presence-negation: "the tag/attribute x is not present")
+    if isinstance(cond, P.CondNotPresentContext):
+        return {"lhs": lhs, "op": "not_exists"}
+
+    # x   (bare presence check: "the tag/attribute x is present")
+    if isinstance(cond, P.CondPresentContext):
+        return {"lhs": lhs, "op": "exists"}
+
     # Fallback unknown condition
     return {"lhs": _lhs_value("?"), "op": "unknown", "rhs": {"type": "literal", "value": "?"}}
 
@@ -300,10 +314,10 @@ def _cond_expr_to_output(node: dict[str, Any]) -> dict[str, Any]:
     def _to_expr(n: dict[str, Any]) -> dict[str, Any]:
         if n.get("type") == "clause":
             clause = n["clause"]
-            return {
-                "type": "clause",
-                "node": {"lhs": clause["lhs"], "op": clause["op"], "rhs": clause["rhs"]},
-            }
+            node = {"lhs": clause["lhs"], "op": clause["op"]}
+            if "rhs" in clause:
+                node["rhs"] = clause["rhs"]
+            return {"type": "clause", "node": node}
         return {
             "type": "group",
             "mode": n.get("mode", "all"),
@@ -318,7 +332,8 @@ def _cond_expr_to_output(node: dict[str, Any]) -> dict[str, Any]:
 
 
 def _conditions(ctx_with_cond: Any, *, nested_simplify: bool) -> dict[str, Any] | None:
-    c = ctx_with_cond.conditionExpr()
+    get_cond = getattr(ctx_with_cond, "conditionExpr", None)
+    c = get_cond() if callable(get_cond) else None
     if not c:
         return None
 
@@ -578,19 +593,28 @@ def _allow(
 
 
 
+def _define_target_name(tgt: Any) -> str:
+    # Under error-recovery, name() can legitimately be None even when this branch matched.
+    name_ctx = tgt.name()
+    return _strip_quotes(name_ctx.getText()) if name_ctx is not None else "?"
+
+
 def _define(ctx: P.DefineStmtContext, include_spans: bool, *, source_text: str | None) -> dict[str, Any]:
     # Build the define 'symbol' (typed alias) and its 'def' (typed value, usually ocid)
     tgt = ctx.defineTarget()
-    if tgt.TENANCY():
-        symbol = {"type": "tenancy", "name": _strip_quotes(tgt.name().getText())}
+    if tgt is None:
+        symbol: dict[str, Any] = {"type": "unknown", "name": "?"}
+    elif tgt.TENANCY():
+        symbol = {"type": "tenancy", "name": _define_target_name(tgt)}
     elif tgt.GROUP():
         symbol = {"type": "group", "name": _qname(tgt.qualifiedName())}
     elif tgt.DYNAMIC_GROUP():
         symbol = {"type": "dynamic-group", "name": _qname(tgt.qualifiedName())}
     else:
-        symbol = {"type": "compartment", "name": _strip_quotes(tgt.name().getText())}
+        symbol = {"type": "compartment", "name": _define_target_name(tgt)}
 
-    ocid_text = _strip_quotes(ctx.ocid().getText())
+    ocid_ctx = ctx.ocid()
+    ocid_text = _strip_quotes(ocid_ctx.getText()) if ocid_ctx is not None else "?"
     node = {
         "kind": "define",
         "symbol": symbol,
@@ -604,10 +628,28 @@ def _define(ctx: P.DefineStmtContext, include_spans: bool, *, source_text: str |
 
 
 def _target_node(es: Any) -> dict[str, Any]:
-    # Normalize ENDORSE target to typed shape
+    # Normalize an endorseScope to a typed shape. Three forms: "ANY-TENANCY",
+    # "TENANCY <name>", and "COMPARTMENT <path> OF TENANCY <name>".
     if es.ANY_TENANCY():
         return {"type": "any-tenancy", "values": []}
-    return {"type": "tenancy", "values": [_strip_quotes(es.name().getText())]}
+
+    compartment_getter = getattr(es, "compartmentPath", None)
+    path_ctx = compartment_getter() if callable(compartment_getter) else None
+    if path_ctx is not None:
+        names = _compartment_path(path_ctx)
+        node_type = "compartment_name" if len(names) == 1 else "compartment-path"
+        tenancy_ctx = es.name()
+        out: dict[str, Any] = {"type": node_type, "values": names}
+        if tenancy_ctx is not None:
+            out["tenancy"] = _strip_quotes(tenancy_ctx.getText())
+        return out
+
+    name_ctx = es.name()
+    if name_ctx is None:
+        # Malformed input under error-recovery (error_mode="report"/"ignore"): neither
+        # alternative matched cleanly, so there's nothing meaningful to report.
+        return {"type": "unknown", "values": []}
+    return {"type": "tenancy", "values": [_strip_quotes(name_ctx.getText())]}
 
 
 def _target_from_stmt(stmt_ctx: Any) -> dict[str, Any]:
@@ -628,6 +670,14 @@ def _endorse_actions_from_ctx(evctx: Any) -> dict[str, Any]:
     return chunks[0] if chunks else {"type": "verbs", "values": []}
 
 
+def _endorse_permission_list_actions(ctx: Any) -> dict[str, Any]:
+    # ENDORSE ... {PERM1, PERM2, ...} IN ... - no TO, no resource-type.
+    nodes = ctx.WORD()
+    words = [n.getText() for n in nodes] if isinstance(nodes, list) else ([nodes.getText()] if nodes else [])
+    values = [_ilower(w) for w in words if w]
+    return {"type": "permissions", "values": values} if values else {"type": "unknown", "values": []}
+
+
 def _endorse(
     ctx: P.EndorseStmtContext,
     include_spans: bool,
@@ -640,7 +690,13 @@ def _endorse(
     kind = "deny_endorse" if is_deny else "endorse"
 
     targets = _target_from_stmt(ctx)
-    actions = _endorse_actions_from_ctx(ctx.endorseVerb())
+
+    if isinstance(ctx, P.EndorsePermissionListContext):
+        actions = _endorse_permission_list_actions(ctx)
+    else:
+        evm = getattr(ctx, "endorseVerb", None)
+        evctx = evm() if callable(evm) else None
+        actions = _endorse_actions_from_ctx(evctx) if evctx else {"type": "unknown", "values": []}
 
     out: dict[str, Any] = {
         "kind": kind,
@@ -674,18 +730,31 @@ def _admit(
     is_deny = bool(denym()) if callable(denym) else False
     kind = "deny_admit" if is_deny else "admit"
 
-    source_tenancy = _strip_quotes(ctx.name().getText()) if ctx.OF() else None
+    if isinstance(ctx, P.AdmitWildcardOfAnyTenancyContext):
+        # Grammar-enforced: OF ANY-TENANCY is only reachable with ANY_USER or
+        # ANY_GROUP as subject.
+        subject = {"type": "any-group", "values": []} if ctx.ANY_GROUP() else {"type": "any-user", "values": []}
+        source: dict[str, Any] | None = {"type": "any-tenancy", "values": []}
+    else:
+        # Under error recovery, ANTLR can fail to commit to either labeled
+        # alternative (both start with "ADMIT ANY_USER/ANY_GROUP ..."), leaving
+        # a bare AdmitStmtContext that has neither .OF() nor .name() at all.
+        subject = _subject_from_stmt(ctx)
+        ofm = getattr(ctx, "OF", None)
+        namem = getattr(ctx, "name", None)
+        name_ctx = namem() if callable(ofm) and ofm() and callable(namem) else None
+        source = {"type": "tenancy", "values": [_strip_quotes(name_ctx.getText())]} if name_ctx else None
 
     out: dict[str, Any] = {
         "kind": kind,
-        "subject": _subject_from_stmt(ctx),
+        "subject": subject,
         "actions": _actions_from_stmt(ctx),
         "resources": _resource_from_stmt(ctx),
         "location": _location_from_stmt(ctx),
     }
 
-    if source_tenancy:
-        out["source"] = {"type": "tenancy", "values": [source_tenancy]}
+    if source is not None:
+        out["source"] = source
 
     cond = _conditions(ctx, nested_simplify=nested_simplify)
     if cond:

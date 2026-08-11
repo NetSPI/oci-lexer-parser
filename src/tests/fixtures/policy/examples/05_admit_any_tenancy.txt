@@ -1,0 +1,3 @@
+Admit any-user of any-tenancy to manage object-family in tenancy
+Admit any-group of any-tenancy to manage object-family in tenancy
+Admit any-user of tenancy SourceTenancy to manage object-family in tenancy
