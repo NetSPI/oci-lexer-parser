@@ -15,6 +15,11 @@ on:
         options:
           - "false"
           - "true"
+      notes:
+        description: "Custom release notes (leave blank to auto-generate from commits)"
+        required: false
+        default: ""
+        type: string
 
 # Least privilege by default; only the job that creates/updates the release
 # and uploads assets opts up to write.
@@ -128,6 +133,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_TAG: ${{ inputs.tag }}
           RELEASE_PRERELEASE: ${{ inputs.prerelease }}
+          RELEASE_NOTES: ${{ inputs.notes }}
           RELEASE_TARGET: ${{ github.sha }}
         run: |
           PRERELEASE_FLAG=()
@@ -139,8 +145,17 @@ jobs:
           # per artifact under dist/ (dist/oci-lexer-parse-linux-x64/..., etc) --
           # one level deep, so a plain dist/*/* glob (no globstar needed) covers it.
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release edit "$RELEASE_TAG" --title "$RELEASE_TAG" "${PRERELEASE_FLAG[@]}"
+            NOTES_FLAG=()
+            if [ -n "$RELEASE_NOTES" ]; then
+              NOTES_FLAG+=(--notes "$RELEASE_NOTES")
+            fi
+            # No notes input on a re-run: leave existing notes on the release as-is.
+            gh release edit "$RELEASE_TAG" --title "$RELEASE_TAG" "${NOTES_FLAG[@]}" "${PRERELEASE_FLAG[@]}"
           else
-            gh release create "$RELEASE_TAG" --target "$RELEASE_TARGET" --title "$RELEASE_TAG" --generate-notes "${PRERELEASE_FLAG[@]}"
+            NOTES_FLAG=(--generate-notes)
+            if [ -n "$RELEASE_NOTES" ]; then
+              NOTES_FLAG=(--notes "$RELEASE_NOTES")
+            fi
+            gh release create "$RELEASE_TAG" --target "$RELEASE_TARGET" --title "$RELEASE_TAG" "${NOTES_FLAG[@]}" "${PRERELEASE_FLAG[@]}"
           fi
           gh release upload "$RELEASE_TAG" dist/*/* --clobber
